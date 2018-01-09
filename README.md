@@ -1,9 +1,9 @@
 # SNavigationController
-
-[![CI Status](http://img.shields.io/travis/Cyrex/SNavigationControllerExample.svg?style=flat)](https://travis-ci.org/Cyrex/SNavigationControllerExample)
-[![Version](https://img.shields.io/cocoapods/v/SNavigationControllerExample.svg?style=flat)](http://cocoapods.org/pods/SNavigationControllerExample)
-[![License](https://img.shields.io/cocoapods/l/SNavigationControllerExample.svg?style=flat)](http://cocoapods.org/pods/SNavigationControllerExample)
-[![Platform](https://img.shields.io/cocoapods/p/SNavigationControllerExample.svg?style=flat)](http://cocoapods.org/pods/SNavigationControllerExample)
+[![Build Status](https://travis-ci.org/Cyrex/SNavigationController.svg?branch=master)](https://travis-ci.org/Cyrex/SNavigationController)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Cyrex/SNavigationController/blob/develop/LICENSE)
+<!-- [![Version](https://img.shields.io/cocoapods/v/IAImagePickerViewController.svg?style=flat)](http://cocoapods.org/pods/IAImagePickerViewController)
+[![License](https://img.shields.io/cocoapods/l/IAImagePickerViewController.svg?style=flat)](http://cocoapods.org/pods/IAImagePickerViewController)
+[![Platform](https://img.shields.io/cocoapods/p/IAImagePickerViewController.svg?style=flat)](http://cocoapods.org/pods/IAImagePickerViewController) -->
 
 This project is based JNTian's project you can see [TNavigationController](https://github.com/JNTian/JTNavigationController) for more informations. Thanks!
 
@@ -15,7 +15,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-SNavigationControllerExample is available through [CocoaPods](http://cocoapods.org). To install
+SNavigationController is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
