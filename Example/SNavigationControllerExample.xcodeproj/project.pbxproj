@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		023B80924475CB768BF19EF4 /* Pods_SNavigationControllerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E503F2ED16B64F05B34AE6 /* Pods_SNavigationControllerExample.framework */; };
+		3612E0531FF63E9600CF0FDA /* UIImage+SColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3612E0521FF63E9600CF0FDA /* UIImage+SColor.m */; };
+		3612E0561FF64DC100CF0FDA /* SSelfDefineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3612E0551FF64DC100CF0FDA /* SSelfDefineViewController.m */; };
+		362804901F8E2FE700603C7D /* SFullScreenGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3628048F1F8E2FE700603C7D /* SFullScreenGestureViewController.m */; };
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* SAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* SAppDelegate.m */; };
+		6003F5A7195388D20070C39A /* SViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* SViewController.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		B0C9C30789EB62251B206BF1 /* Pods_SNavigationControllerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41158CBA7E775A16C325A843 /* Pods_SNavigationControllerExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E9428995B33D5E0DD4BC58E /* SNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SNavigationController.podspec; path = ../SNavigationController.podspec; sourceTree = "<group>"; };
+		330FA8D6F2F5E5E6D022D386 /* Pods-SNavigationControllerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationControllerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNavigationControllerExample/Pods-SNavigationControllerExample.release.xcconfig"; sourceTree = "<group>"; };
+		3612E0511FF63E9600CF0FDA /* UIImage+SColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SColor.h"; sourceTree = "<group>"; };
+		3612E0521FF63E9600CF0FDA /* UIImage+SColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SColor.m"; sourceTree = "<group>"; };
+		3612E0541FF64DC100CF0FDA /* SSelfDefineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSelfDefineViewController.h; sourceTree = "<group>"; };
+		3612E0551FF64DC100CF0FDA /* SSelfDefineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSelfDefineViewController.m; sourceTree = "<group>"; };
+		3621F3F21FFCEE6400F60E0A /* SNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNavigationController.m; sourceTree = "<group>"; };
+		3621F3F31FFCEE6400F60E0A /* SNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNavigationController.h; sourceTree = "<group>"; };
+		3628048E1F8E2FE700603C7D /* SFullScreenGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFullScreenGestureViewController.h; sourceTree = "<group>"; };
+		3628048F1F8E2FE700603C7D /* SFullScreenGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFullScreenGestureViewController.m; sourceTree = "<group>"; };
+		3670482E1F681820001BE569 /* UIViewController+SNavigationExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SNavigationExtension.h"; sourceTree = "<group>"; };
+		3670482F1F681820001BE569 /* UIViewController+SNavigationExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SNavigationExtension.m"; sourceTree = "<group>"; };
+		41158CBA7E775A16C325A843 /* Pods_SNavigationControllerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNavigationControllerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E503F2ED16B64F05B34AE6 /* Pods_SNavigationControllerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNavigationControllerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5895C3FF1BC3FE4468D2E82F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* SNavigationControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNavigationControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* SNavigationControllerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SNavigationControllerExample-Info.plist"; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* SNavigationControllerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SNavigationControllerExample-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* SAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* SAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* SViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* SViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SViewController.m; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		69F869467B781AE38DF2284F /* Pods_SNavigationControllerExample_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNavigationControllerExample_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7489976C4EDC607D4F1465FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8E1B18EF02EC0D748A42663C /* Pods-SNavigationControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationControllerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNavigationControllerExample/Pods-SNavigationControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
+		9A1F04008BA732C45F9D13FB /* Pods-SNavigationControllerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationControllerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNavigationControllerExample/Pods-SNavigationControllerExample.release.xcconfig"; sourceTree = "<group>"; };
+		B924F684D78D22E9248790A0 /* Pods_SNavigationControllerExample_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNavigationControllerExample_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B9EFE5176AFE7806A6D330 /* Pods-SNavigationControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationControllerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNavigationControllerExample/Pods-SNavigationControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				023B80924475CB768BF19EF4 /* Pods_SNavigationControllerExample.framework in Frameworks */,
+				B0C9C30789EB62251B206BF1 /* Pods_SNavigationControllerExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3612E0501FF63E6C00CF0FDA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3612E0511FF63E9600CF0FDA /* UIImage+SColor.h */,
+				3612E0521FF63E9600CF0FDA /* UIImage+SColor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3628048D1F8E2FCF00603C7D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3628048E1F8E2FE700603C7D /* SFullScreenGestureViewController.h */,
+				3628048F1F8E2FE700603C7D /* SFullScreenGestureViewController.m */,
+				3612E0541FF64DC100CF0FDA /* SSelfDefineViewController.h */,
+				3612E0551FF64DC100CF0FDA /* SSelfDefineViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		367E65521F66AFE3003733E7 /* SNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				3621F3F31FFCEE6400F60E0A /* SNavigationController.h */,
+				3621F3F21FFCEE6400F60E0A /* SNavigationController.m */,
+				3670482E1F681820001BE569 /* UIViewController+SNavigationExtension.h */,
+				3670482F1F681820001BE569 /* UIViewController+SNavigationExtension.m */,
+			);
+			name = SNavigationController;
+			path = ../SNavigationController;
+			sourceTree = "<group>";
+		};
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				367E65521F66AFE3003733E7 /* SNavigationController */,
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* SNavigationControllerExample */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				D493B436174289ADA4BFE5D9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* SNavigationControllerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				B924F684D78D22E9248790A0 /* Pods_SNavigationControllerExample_Example.framework */,
+				69F869467B781AE38DF2284F /* Pods_SNavigationControllerExample_Tests.framework */,
+				49E503F2ED16B64F05B34AE6 /* Pods_SNavigationControllerExample.framework */,
+				41158CBA7E775A16C325A843 /* Pods_SNavigationControllerExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* SNavigationControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				6003F59C195388D20070C39A /* SAppDelegate.h */,
+				6003F59D195388D20070C39A /* SAppDelegate.m */,
+				6003F5A5195388D20070C39A /* SViewController.h */,
+				6003F5A6195388D20070C39A /* SViewController.m */,
+				3612E0501FF63E6C00CF0FDA /* Category */,
+				3628048D1F8E2FCF00603C7D /* ViewControllers */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+			);
+			path = SNavigationControllerExample;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* SNavigationControllerExample-Info.plist */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* SNavigationControllerExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				1E9428995B33D5E0DD4BC58E /* SNavigationController.podspec */,
+				7489976C4EDC607D4F1465FD /* README.md */,
+				5895C3FF1BC3FE4468D2E82F /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		D493B436174289ADA4BFE5D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8B9EFE5176AFE7806A6D330 /* Pods-SNavigationControllerExample.debug.xcconfig */,
+				330FA8D6F2F5E5E6D022D386 /* Pods-SNavigationControllerExample.release.xcconfig */,
+				8E1B18EF02EC0D748A42663C /* Pods-SNavigationControllerExample.debug.xcconfig */,
+				9A1F04008BA732C45F9D13FB /* Pods-SNavigationControllerExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* SNavigationControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SNavigationControllerExample" */;
+			buildPhases = (
+				DF709F9FEC2919CF88FBB8EF /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				6ABCE87A1864AC273DC923C8 /* [CP] Embed Pods Frameworks */,
+				C264CACDC5C33EB8F22F6523 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNavigationControllerExample;
+			productName = SNavigationControllerExample;
+			productReference = 6003F58A195388D20070C39A /* SNavigationControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IA;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Cyrex;
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = N26M59Z84Z;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "SNavigationControllerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* SNavigationControllerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6ABCE87A1864AC273DC923C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SNavigationControllerExample/Pods-SNavigationControllerExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SNavigationController/SNavigationController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SNavigationController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SNavigationControllerExample/Pods-SNavigationControllerExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C264CACDC5C33EB8F22F6523 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SNavigationControllerExample/Pods-SNavigationControllerExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF709F9FEC2919CF88FBB8EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNavigationControllerExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F59E195388D20070C39A /* SAppDelegate.m in Sources */,
+				3612E0561FF64DC100CF0FDA /* SSelfDefineViewController.m in Sources */,
+				6003F5A7195388D20070C39A /* SViewController.m in Sources */,
+				362804901F8E2FE700603C7D /* SFullScreenGestureViewController.m in Sources */,
+				3612E0531FF63E9600CF0FDA /* UIImage+SColor.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E1B18EF02EC0D748A42663C /* Pods-SNavigationControllerExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNavigationControllerExample/SNavigationControllerExample-Prefix.pch";
+				INFOPLIST_FILE = "SNavigationControllerExample/SNavigationControllerExample-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrex.demo.SNavigationControllerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A1F04008BA732C45F9D13FB /* Pods-SNavigationControllerExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SNavigationControllerExample/SNavigationControllerExample-Prefix.pch";
+				INFOPLIST_FILE = "SNavigationControllerExample/SNavigationControllerExample-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrex.demo.SNavigationControllerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "SNavigationControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SNavigationControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}
