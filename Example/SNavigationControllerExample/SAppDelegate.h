@@ -1,9 +1,14 @@
 //
-//  SAppDelegate.h
-//  SNavigationControllerExample
+//  Copyright © 2018 ZhiweiSun. All rights reserved.
 //
-//  Created by Cyrex on 09/11/2017.
-//  Copyright (c) 2017 Cyrex. All rights reserved.
+//  File name: SAppDelegate.h
+//  Author:    ZhiweiSun @Cyrex
+//  E-mail:    szwathub@gmail.com
+//
+//  Description:
+//
+//  History:
+//      02/09/2018: Created by Cyrex on 02/09/2018
 //
 
 @import UIKit;

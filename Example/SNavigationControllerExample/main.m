@@ -1,9 +1,9 @@
 //
-//  main.m
-//  SNavigationControllerExample
+//  Copyright © 2018 ZhiweiSun. All rights reserved.
 //
-//  Created by Cyrex on 09/11/2017.
-//  Copyright (c) 2017 Cyrex. All rights reserved.
+//  File name: mian.m
+//  Author:    ZhiweiSun @Cyrex
+//  E-mail:    szwathub@gmail.com
 //
 
 @import UIKit;

@@ -1,11 +1,10 @@
 # SNavigationController
-[![Build Status](https://travis-ci.org/Cyrex/SNavigationController.svg?branch=master)](https://travis-ci.org/Cyrex/SNavigationController)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Cyrex/SNavigationController/blob/develop/LICENSE)
-<!-- [![Version](https://img.shields.io/cocoapods/v/IAImagePickerViewController.svg?style=flat)](http://cocoapods.org/pods/IAImagePickerViewController)
-[![License](https://img.shields.io/cocoapods/l/IAImagePickerViewController.svg?style=flat)](http://cocoapods.org/pods/IAImagePickerViewController)
-[![Platform](https://img.shields.io/cocoapods/p/IAImagePickerViewController.svg?style=flat)](http://cocoapods.org/pods/IAImagePickerViewController) -->
 
-This project is based JNTian's project you can see [TNavigationController](https://github.com/JNTian/JTNavigationController) for more informations. Thanks!
+[![CI Status](http://img.shields.io/travis/Cyrex/SNavigationController.svg?style=flat)](https://travis-ci.org/Cyrex/SNavigationController)
+[![Version](https://img.shields.io/cocoapods/v/SNavigationController.svg?style=flat)](http://cocoapods.org/pods/SNavigationController)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Cyrex/SNavigationController)
+[![License](https://img.shields.io/cocoapods/l/SNavigationController.svg?style=flat)](http://cocoapods.org/pods/SNavigationController)
+[![Platform](https://img.shields.io/cocoapods/p/SNavigationController.svg?style=flat)](http://cocoapods.org/pods/SNavigationController)
 
 ## Example
 
@@ -14,13 +13,25 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 ## Installation
-
-SNavigationController is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+#### CocoaPods
+SNavigationController is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'SNavigationController'
 ```
+
+#### Carthage
+[Carthage](https://github.com/Carthage/Carthage) is a lightweight dependency manager for Swift and Objective-C. It leverages CocoaTouch modules and is less invasive than CocoaPods.
+
+To install with carthage, follow the instruction on [Carthage](https://github.com/Carthage/Carthage)
+
+##### Cartfile
+```ruby
+github "Cyrex/SNavigationController"
+```
+
+#### Manual Installation
+Copy and add all of the files in the `SNavigationController` directory (and its subdirectories) into your project.
 
 ## Author
 

@@ -1,9 +1,14 @@
 //
-//  SViewController.m
-//  SNavigationControllerExample
+//  Copyright © 2018 ZhiweiSun. All rights reserved.
 //
-//  Created by Cyrex on 09/11/2017.
-//  Copyright (c) 2017 Cyrex. All rights reserved.
+//  File name: SViewController.m
+//  Author:    ZhiweiSun @Cyrex
+//  E-mail:    szwathub@gmail.com
+//
+//  Description:
+//
+//  History:
+//      02/09/2018: Created by Cyrex on 02/09/2018
 //
 
 #import "SViewController.h"
@@ -23,13 +28,13 @@
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     
     self.title = @"SNavigationController";
     [self.navigationController.navigationBar setShadowImage:[UIImage s_imageWithColor:UIColorFromRGB(237, 237, 237)
-                                                                                  size:CGSizeMake(SCREEN_WIDTH, 1)]];
+                                                                                 size:CGSizeMake(SCREEN_WIDTH, 1)]];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage s_imageWithColor:[UIColor whiteColor]]
                                                   forBarMetrics:UIBarMetricsDefault];
 }
