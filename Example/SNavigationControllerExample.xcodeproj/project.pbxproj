@@ -638,8 +638,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N26M59Z84Z;
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SNavigationControllerExample/SNavigationControllerExample-Prefix.pch";
 				INFOPLIST_FILE = "SNavigationControllerExample/SNavigationControllerExample-Info.plist";
@@ -656,8 +654,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N26M59Z84Z;
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SNavigationControllerExample/SNavigationControllerExample-Prefix.pch";
 				INFOPLIST_FILE = "SNavigationControllerExample/SNavigationControllerExample-Info.plist";
