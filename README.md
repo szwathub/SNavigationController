@@ -1,7 +1,6 @@
 # SNavigationController
 
 [![CI Status](http://img.shields.io/travis/Cyrex/SNavigationController.svg?style=flat)](https://travis-ci.org/Cyrex/SNavigationController)
-[![codecov.io](https://codecov.io/github/Cyrex/SNavigationController/coverage.svg?branch=master)](https://codecov.io/github/Cyrex/SNavigationController?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/SNavigationController.svg?style=flat)](http://cocoapods.org/pods/SNavigationController)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Cyrex/SNavigationController)
 [![License](https://img.shields.io/cocoapods/l/SNavigationController.svg?style=flat)](http://cocoapods.org/pods/SNavigationController)
