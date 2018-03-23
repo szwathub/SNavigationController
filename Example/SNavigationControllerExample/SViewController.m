@@ -62,8 +62,6 @@
         case 3:
             cell.textLabel.text = @"Self-Define NavigationBar. Normal";
             break;
-        default:
-            break;
     }
     
     return cell;
@@ -71,24 +69,8 @@
 
 
 #pragma mark - UITableViewDelegate
-- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    return nil;
-}
-
-- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    return nil;
-}
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 64;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return CGFLOAT_MIN;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return CGFLOAT_MIN;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -122,8 +104,6 @@
             vc.backColor = [UIColor redColor];
             [self.navigationController pushViewController:vc animated:YES];
         }
-            break;
-        default:
             break;
     }
 }

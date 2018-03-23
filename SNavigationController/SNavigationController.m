@@ -112,17 +112,17 @@ static NSValue *s_tabBarRectValue;
 + (SWrapViewController *)wrapViewControllerWithViewController:(UIViewController *)viewController {
     SWrapNavigationController *wrapNavController = [[SWrapNavigationController alloc] init];
     wrapNavController.viewControllers = @[viewController];
-    
+
     SWrapViewController *wrapViewController = [[SWrapViewController alloc] init];
     [wrapViewController.view addSubview:wrapNavController.view];
     [wrapViewController addChildViewController:wrapNavController];
-    
+
     return wrapViewController;
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    
+
     if (self.tabBarController && !s_tabBarRectValue) {
         s_tabBarRectValue = [NSValue valueWithCGRect:self.tabBarController.tabBar.frame];
     }
@@ -131,7 +131,7 @@ static NSValue *s_tabBarRectValue;
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
+
     if (self.tabBarController && [self rootViewController].hidesBottomBarWhenPushed) {
         self.tabBarController.tabBar.frame = CGRectZero;
     }
@@ -171,7 +171,7 @@ static NSValue *s_tabBarRectValue;
 
 - (UIViewController *)rootViewController {
     SWrapNavigationController *wrapNavController = self.childViewControllers.firstObject;
-    
+
     return wrapNavController.topViewController;
 }
 
@@ -189,28 +189,27 @@ static NSValue *s_tabBarRectValue;
     return [self.navigationController popViewControllerAnimated:animated];
 }
 
-- (NSArray<UIViewController *> *)popToRootViewControllerAnimated:(BOOL)animated {
+- (NSArray <UIViewController *> *)popToRootViewControllerAnimated:(BOOL)animated {
     return [self.navigationController popToRootViewControllerAnimated:animated];
 }
 
-- (NSArray<UIViewController *> *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated {
+- (NSArray <UIViewController *> *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated {
     SNavigationController *s_navigationController = viewController.s_navigationController;
     NSInteger index = [s_navigationController.s_viewControllers indexOfObject:viewController];
-    
+
     return [self.navigationController popToViewController:s_navigationController.viewControllers[index]
                                                  animated:animated];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    
     viewController.s_navigationController = (SNavigationController *)self.navigationController;
-    
+
     UIImage *backButtonImage = viewController.s_backButtonImage;
-    
+
     if (!backButtonImage) {
         backButtonImage = [UIImage imageNamed:S_DefaultBackButtonImage];
     }
-    
+
     UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithImage:backButtonImage
                                                                        style:UIBarButtonItemStylePlain
                                                                       target:self

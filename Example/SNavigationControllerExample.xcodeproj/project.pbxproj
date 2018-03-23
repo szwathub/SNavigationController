@@ -46,6 +46,11 @@
 		362306A820271A9C0058A7FF /* SNavigationControllerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNavigationControllerExampleTests.m; sourceTree = "<group>"; };
 		362306B020271ABB0058A7FF /* SNavigationControllerExampleTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SNavigationControllerExampleTests-Prefix.pch"; sourceTree = "<group>"; };
 		362306B320271C8A0058A7FF /* SNavigationControllerExampleTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SNavigationControllerExampleTests-Info.plist"; sourceTree = "<group>"; };
+		365E247D2064F0E600CF0147 /* UIViewController+SNavigationExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SNavigationExtension.h"; sourceTree = "<group>"; };
+		365E247E2064F0E600CF0147 /* SNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNavigationController.h; sourceTree = "<group>"; };
+		365E247F2064F0E600CF0147 /* UIViewController+SNavigationExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SNavigationExtension.m"; sourceTree = "<group>"; };
+		365E24802064F0E600CF0147 /* SNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNavigationController.m; sourceTree = "<group>"; };
+		365E24812064F0E600CF0147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EFFEE17526C82DD1318EF25 /* Pods-SNavigationControllerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationControllerExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNavigationControllerExampleTests/Pods-SNavigationControllerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4DB0F8FDD944C3996480C0F3 /* Pods-SNavigationControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationControllerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNavigationControllerExample/Pods-SNavigationControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		5C064FC8B8C4C8C52D92B5BF /* Pods_SNavigationControllerExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNavigationControllerExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,9 +136,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		365E247C2064F0E600CF0147 /* SNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				365E247D2064F0E600CF0147 /* UIViewController+SNavigationExtension.h */,
+				365E247E2064F0E600CF0147 /* SNavigationController.h */,
+				365E247F2064F0E600CF0147 /* UIViewController+SNavigationExtension.m */,
+				365E24802064F0E600CF0147 /* SNavigationController.m */,
+				365E24812064F0E600CF0147 /* Info.plist */,
+			);
+			name = SNavigationController;
+			path = ../SNavigationController;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				365E247C2064F0E600CF0147 /* SNavigationController */,
 				6003F593195388D20070C39A /* SNavigationControllerExample */,
 				362306A720271A9C0058A7FF /* SNavigationControllerExampleTests */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -260,11 +279,12 @@
 					362306A520271A9C0058A7FF = {
 						CreatedOnToolsVersion = 9.2;
 						DevelopmentTeam = N26M59Z84Z;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = N26M59Z84Z;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -482,7 +502,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = N26M59Z84Z;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -496,6 +516,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo..SNavigationControllerExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SNavigationControllerExample.app/SNavigationControllerExample";
 			};
@@ -521,7 +542,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = N26M59Z84Z;
@@ -536,6 +557,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo..SNavigationControllerExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SNavigationControllerExample.app/SNavigationControllerExample";
 			};
@@ -641,6 +663,7 @@
 			baseConfigurationReference = 4DB0F8FDD944C3996480C0F3 /* Pods-SNavigationControllerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = N26M59Z84Z;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -648,8 +671,10 @@
 				GCC_PREFIX_HEADER = "SNavigationControllerExample/SNavigationControllerExample-Prefix.pch";
 				INFOPLIST_FILE = "SNavigationControllerExample/SNavigationControllerExample-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.SNavigationControllerExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrex.demo.SNavigationControllerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5619c084-da5a-41c4-9c22-68072107344b";
+				PROVISIONING_PROFILE_SPECIFIER = "com.cyrex.demo.*";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -659,6 +684,7 @@
 			baseConfigurationReference = F9D71852CDB064FC11D9ECF0 /* Pods-SNavigationControllerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = N26M59Z84Z;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
@@ -666,8 +692,10 @@
 				GCC_PREFIX_HEADER = "SNavigationControllerExample/SNavigationControllerExample-Prefix.pch";
 				INFOPLIST_FILE = "SNavigationControllerExample/SNavigationControllerExample-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.SNavigationControllerExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrex.demo.SNavigationControllerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5619c084-da5a-41c4-9c22-68072107344b";
+				PROVISIONING_PROFILE_SPECIFIER = "com.cyrex.demo.*";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
