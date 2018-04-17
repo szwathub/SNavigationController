@@ -16,8 +16,6 @@
 
 #import "UIViewController+SNavigationExtension.h"
 
-extern NSString *S_DefaultBackButtonImage;
-
 #pragma mark -
 #pragma mark - SNavigationController
 @interface SNavigationController : UINavigationController

@@ -9,7 +9,6 @@
 
 #import "SNavigationController.h"
 
-NSString *S_DefaultBackButtonImage;
 static NSValue *s_tabBarRectValue;
 
 
@@ -205,10 +204,6 @@ static NSValue *s_tabBarRectValue;
     viewController.s_navigationController = (SNavigationController *)self.navigationController;
 
     UIImage *backButtonImage = viewController.s_backButtonImage;
-
-    if (!backButtonImage) {
-        backButtonImage = [UIImage imageNamed:S_DefaultBackButtonImage];
-    }
 
     UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithImage:backButtonImage
                                                                        style:UIBarButtonItemStylePlain

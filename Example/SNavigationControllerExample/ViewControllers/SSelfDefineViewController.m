@@ -24,6 +24,14 @@
 
 @implementation SSelfDefineViewController
 #pragma mark - Life Cycle
+- (instancetype)init {
+    if (self = [super init]) {
+        self.s_backButtonImage = [UIImage imageNamed:@"navigation_back_image"];
+    }
+
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

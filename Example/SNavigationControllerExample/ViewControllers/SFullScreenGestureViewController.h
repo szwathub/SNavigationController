@@ -13,13 +13,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, ScreenEdgePanGstureState) {
-    ScreenEdgePanGstureStateOff = 0,
-    ScreenEdgePanGstureStateOn
-};
-
 @interface SFullScreenGestureViewController : UIViewController
-
-@property (nonatomic, assign) ScreenEdgePanGstureState state;
 
 @end

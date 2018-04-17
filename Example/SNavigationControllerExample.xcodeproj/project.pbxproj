@@ -110,10 +110,10 @@
 		3612C562202DA0F60086B360 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3612C563202DA0F60086B360 /* SFullScreenGestureViewController.m */,
-				3612C564202DA0F60086B360 /* SSelfDefineViewController.m */,
 				3612C565202DA0F60086B360 /* SFullScreenGestureViewController.h */,
+				3612C563202DA0F60086B360 /* SFullScreenGestureViewController.m */,
 				3612C566202DA0F60086B360 /* SSelfDefineViewController.h */,
+				3612C564202DA0F60086B360 /* SSelfDefineViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -140,8 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				365E247D2064F0E600CF0147 /* UIViewController+SNavigationExtension.h */,
-				365E247E2064F0E600CF0147 /* SNavigationController.h */,
 				365E247F2064F0E600CF0147 /* UIViewController+SNavigationExtension.m */,
+				365E247E2064F0E600CF0147 /* SNavigationController.h */,
 				365E24802064F0E600CF0147 /* SNavigationController.m */,
 				365E24812064F0E600CF0147 /* Info.plist */,
 			);
@@ -273,7 +273,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = S;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = ZhiweiSun;
 				TargetAttributes = {
 					362306A520271A9C0058A7FF = {
@@ -401,9 +401,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SNavigationControllerExampleTests/Pods-SNavigationControllerExampleTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -486,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3EFFEE17526C82DD1318EF25 /* Pods-SNavigationControllerExampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -526,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4FF53BDF64B8DB88D7B7E9E /* Pods-SNavigationControllerExampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -575,12 +582,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -626,12 +635,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -663,6 +674,7 @@
 			baseConfigurationReference = 4DB0F8FDD944C3996480C0F3 /* Pods-SNavigationControllerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = N26M59Z84Z;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
@@ -673,7 +685,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyrex.demo.SNavigationControllerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5619c084-da5a-41c4-9c22-68072107344b";
+				PROVISIONING_PROFILE = "a4b49a6f-6587-4efc-bc52-7748c6a8ed27";
 				PROVISIONING_PROFILE_SPECIFIER = "com.cyrex.demo.*";
 				WRAPPER_EXTENSION = app;
 			};
@@ -684,6 +696,7 @@
 			baseConfigurationReference = F9D71852CDB064FC11D9ECF0 /* Pods-SNavigationControllerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = N26M59Z84Z;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;

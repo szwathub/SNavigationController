@@ -78,14 +78,12 @@
         case 0: {
             SFullScreenGestureViewController *vc = [[SFullScreenGestureViewController alloc] init];
             vc.s_fullScreenPopGestureEnabled = NO;
-            vc.state = ScreenEdgePanGstureStateOff;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 1: {
             SFullScreenGestureViewController *vc = [[SFullScreenGestureViewController alloc] init];
             vc.s_fullScreenPopGestureEnabled = YES;
-            vc.state = ScreenEdgePanGstureStateOn;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

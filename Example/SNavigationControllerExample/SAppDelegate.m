@@ -21,8 +21,7 @@
 {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    S_DefaultBackButtonImage = @"navigation_back_image";
+
     SViewController *rootVC = [[SViewController alloc] init];
     SNavigationController *NVC = [[SNavigationController alloc] initWithRootViewController:rootVC];
     self.window.rootViewController = NVC;

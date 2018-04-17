@@ -23,25 +23,39 @@
 
 @implementation SFullScreenGestureViewController
 #pragma mark - Life Cycle
+- (instancetype)init {
+    if (self = [super init]) {
+        self.s_backButtonImage = [UIImage imageNamed:@"navigation_back_image"];
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:(59.f / 255.f)
-                                                                        green:(59.f / 255.f)
-                                                                         blue:(59.f / 255.f)
-                                                                        alpha:1.f];
-    [self.navigationController.navigationBar setShadowImage:[UIImage s_imageWithColor:UIColorFromRGB(237, 237, 237)
-                                                                                  size:CGSizeMake(SCREEN_WIDTH, 1)]];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage s_imageWithColor:[UIColor whiteColor]]
-                                                  forBarMetrics:UIBarMetricsDefault];
-    self.title = @"SNavigationController";
+    [self configViews];
+
+    
 }
 
 
 #pragma mark - Private Methods
 - (void)configViews {
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)configNavigation {
+    self.title = @"SNavigationController";
+
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:(59.f / 255.f)
+                                                                        green:(59.f / 255.f)
+                                                                         blue:(59.f / 255.f)
+                                                                        alpha:1.f];
+    [self.navigationController.navigationBar setShadowImage:[UIImage s_imageWithColor:UIColorFromRGB(237, 237, 237)
+                                                                                 size:CGSizeMake(SCREEN_WIDTH, 1)]];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage s_imageWithColor:[UIColor whiteColor]]
+                                                  forBarMetrics:UIBarMetricsDefault];
 }
 
 
