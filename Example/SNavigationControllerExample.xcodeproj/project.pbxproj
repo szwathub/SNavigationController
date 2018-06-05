@@ -11,6 +11,7 @@
 		3612C568202DA0F60086B360 /* SFullScreenGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3612C563202DA0F60086B360 /* SFullScreenGestureViewController.m */; };
 		3612C569202DA0F60086B360 /* SSelfDefineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3612C564202DA0F60086B360 /* SSelfDefineViewController.m */; };
 		362306A920271A9C0058A7FF /* SNavigationControllerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 362306A820271A9C0058A7FF /* SNavigationControllerExampleTests.m */; };
+		364D5F7A20C6A83D0000DBE8 /* SRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D5F7920C6A83D0000DBE8 /* SRootTabBarController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -46,6 +47,8 @@
 		362306A820271A9C0058A7FF /* SNavigationControllerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNavigationControllerExampleTests.m; sourceTree = "<group>"; };
 		362306B020271ABB0058A7FF /* SNavigationControllerExampleTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SNavigationControllerExampleTests-Prefix.pch"; sourceTree = "<group>"; };
 		362306B320271C8A0058A7FF /* SNavigationControllerExampleTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SNavigationControllerExampleTests-Info.plist"; sourceTree = "<group>"; };
+		364D5F7820C6A83D0000DBE8 /* SRootTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRootTabBarController.h; sourceTree = "<group>"; };
+		364D5F7920C6A83D0000DBE8 /* SRootTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRootTabBarController.m; sourceTree = "<group>"; };
 		365E247D2064F0E600CF0147 /* UIViewController+SNavigationExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SNavigationExtension.h"; sourceTree = "<group>"; };
 		365E247E2064F0E600CF0147 /* SNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNavigationController.h; sourceTree = "<group>"; };
 		365E247F2064F0E600CF0147 /* UIViewController+SNavigationExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SNavigationExtension.m"; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* SViewController.h */,
 				6003F5A6195388D20070C39A /* SViewController.m */,
+				364D5F7820C6A83D0000DBE8 /* SRootTabBarController.h */,
+				364D5F7920C6A83D0000DBE8 /* SRootTabBarController.m */,
 				3612C55F202DA0F60086B360 /* Category */,
 				3612C562202DA0F60086B360 /* ViewControllers */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -273,7 +278,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = S;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = ZhiweiSun;
 				TargetAttributes = {
 					362306A520271A9C0058A7FF = {
@@ -448,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364D5F7A20C6A83D0000DBE8 /* SRootTabBarController.m in Sources */,
 				6003F59E195388D20070C39A /* SAppDelegate.m in Sources */,
 				3612C569202DA0F60086B360 /* SSelfDefineViewController.m in Sources */,
 				3612C567202DA0F60086B360 /* UIImage+SColor.m in Sources */,

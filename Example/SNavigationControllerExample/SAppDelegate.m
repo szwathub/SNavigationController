@@ -12,8 +12,7 @@
 //
 
 #import "SAppDelegate.h"
-#import "SViewController.h"
-#import "SNavigationController.h"
+#import "SRootTabBarController.h"
 
 @implementation SAppDelegate
 
@@ -22,9 +21,9 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    SViewController *rootVC = [[SViewController alloc] init];
-    SNavigationController *NVC = [[SNavigationController alloc] initWithRootViewController:rootVC];
-    self.window.rootViewController = NVC;
+    SRootTabBarController *rootVC = [[SRootTabBarController alloc] init];
+
+    self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
     return YES;
 }

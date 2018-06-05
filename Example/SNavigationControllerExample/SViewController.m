@@ -31,7 +31,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
-    
+
     self.title = @"SNavigationController";
     [self.navigationController.navigationBar setShadowImage:[UIImage s_imageWithColor:UIColorFromRGB(237, 237, 237)
                                                                                  size:CGSizeMake(SCREEN_WIDTH, 1)]];
@@ -78,19 +78,22 @@
         case 0: {
             SFullScreenGestureViewController *vc = [[SFullScreenGestureViewController alloc] init];
             vc.s_fullScreenPopGestureEnabled = NO;
+            vc.hidesBottomBarWhenPushed      = YES;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 1: {
             SFullScreenGestureViewController *vc = [[SFullScreenGestureViewController alloc] init];
             vc.s_fullScreenPopGestureEnabled = YES;
+            vc.hidesBottomBarWhenPushed      = YES;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 2: {
             SSelfDefineViewController *vc = [[SSelfDefineViewController alloc] init];
             vc.s_fullScreenPopGestureEnabled = YES;
-            vc.type = SelfDefineTypeGradient;
+            vc.hidesBottomBarWhenPushed      = YES;
+            vc.type                          = SelfDefineTypeGradient;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

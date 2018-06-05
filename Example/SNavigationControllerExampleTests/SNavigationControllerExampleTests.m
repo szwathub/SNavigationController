@@ -16,7 +16,6 @@
 
 #import "SNavigationController.h"
 
-
 QuickSpecBegin(SNavigationControllerSpec)
 describe(@"SNavigationController", ^{
     it(@"view controller", ^{

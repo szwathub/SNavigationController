@@ -10,11 +10,22 @@ xcode_scheme: SNavigationControllerExample
 
 podfile: Example/Podfile
 
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode9
+    - os: osx
+      osx_image: xcode9.1
+    - os: osx
+      osx_image: xcode9.2
+
 before_install:
 - gem install cocoapods # Since Travis is not always on latest version
+- pod repo update
 - pod install --project-directory=Example
 
 script:
+- xcodebuild -project Framework/SNavigationController.xcodeproj -target SNavigationController -destination 'platform=iOS Simulator,name=iPhone 6' | xcpretty
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SNavigationControllerExample.xcworkspace -scheme SNavigationControllerExample -destination 'platform=iOS Simulator,name=iPhone 6' ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
 

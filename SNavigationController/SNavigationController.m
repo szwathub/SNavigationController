@@ -26,6 +26,7 @@ static NSValue *s_tabBarRectValue;
         rootViewController.s_navigationController = self;
         self.viewControllers = @[[SWrapViewController wrapViewControllerWithViewController:rootViewController]];
     }
+
     return self;
 }
 
@@ -34,21 +35,23 @@ static NSValue *s_tabBarRectValue;
         self.viewControllers.firstObject.s_navigationController = self;
         self.viewControllers = @[[SWrapViewController wrapViewControllerWithViewController:self.viewControllers.firstObject]];
     }
+
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self setNavigationBarHidden:YES];
     self.delegate = self;
-    
+
     self.popGestureDelegate = self.interactivePopGestureRecognizer.delegate;
     SEL action = NSSelectorFromString(@"handleNavigationTransition:");
     self.popPanGesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self.popGestureDelegate action:action];
     if ([self.interactivePopGestureRecognizer isKindOfClass:[UIScreenEdgePanGestureRecognizer class]]) {
         self.popPanGesture.edges = ((UIScreenEdgePanGestureRecognizer *)self.interactivePopGestureRecognizer).edges;
     }
+
     self.popPanGesture.maximumNumberOfTouches = 1;
 }
 
@@ -57,9 +60,9 @@ static NSValue *s_tabBarRectValue;
 - (void)navigationController:(UINavigationController *)navigationController
        didShowViewController:(UIViewController *)viewController
                     animated:(BOOL)animated {
-    
+
     BOOL isRootVC = viewController == navigationController.viewControllers.firstObject;
-    
+
     if (viewController.s_fullScreenPopGestureEnabled) {
         if (isRootVC) {
             [self.view removeGestureRecognizer:self.popPanGesture];
@@ -94,7 +97,7 @@ static NSValue *s_tabBarRectValue;
     for (SWrapViewController *wrapViewController in self.viewControllers) {
         [viewControllers addObject:wrapViewController.rootViewController];
     }
-    
+
     return viewControllers.copy;
 }
 
@@ -210,7 +213,7 @@ static NSValue *s_tabBarRectValue;
                                                                       target:self
                                                                       action:@selector(didTapBackButton)];
     [viewController.navigationItem setLeftBarButtonItem:backButtonItem];
-    
+
     [self.navigationController pushViewController:[SWrapViewController wrapViewControllerWithViewController:viewController]
                                          animated:animated];
 }
