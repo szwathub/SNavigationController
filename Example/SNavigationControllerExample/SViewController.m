@@ -62,6 +62,8 @@
         case 3:
             cell.textLabel.text = @"Self-Define NavigationBar. Normal";
             break;
+        default:
+            break;
     }
     
     return cell;
@@ -76,35 +78,37 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case 0: {
-            SFullScreenGestureViewController *vc = [[SFullScreenGestureViewController alloc] init];
-            vc.s_fullScreenPopGestureEnabled = NO;
-            vc.hidesBottomBarWhenPushed      = YES;
-            [self.navigationController pushViewController:vc animated:YES];
+            SFullScreenGestureViewController *viewController = [[SFullScreenGestureViewController alloc] init];
+            viewController.s_fullScreenPopGestureEnabled     = NO;
+            viewController.hidesBottomBarWhenPushed          = YES;
+            [self.navigationController pushViewController:viewController animated:YES];
         }
             break;
         case 1: {
-            SFullScreenGestureViewController *vc = [[SFullScreenGestureViewController alloc] init];
-            vc.s_fullScreenPopGestureEnabled = YES;
-            vc.hidesBottomBarWhenPushed      = YES;
-            [self.navigationController pushViewController:vc animated:YES];
+            SFullScreenGestureViewController *viewController = [[SFullScreenGestureViewController alloc] init];
+            viewController.s_fullScreenPopGestureEnabled     = YES;
+            viewController.hidesBottomBarWhenPushed          = YES;
+            [self.navigationController pushViewController:viewController animated:YES];
         }
             break;
         case 2: {
-            SSelfDefineViewController *vc = [[SSelfDefineViewController alloc] init];
-            vc.s_fullScreenPopGestureEnabled = YES;
-            vc.hidesBottomBarWhenPushed      = YES;
-            vc.type                          = SelfDefineTypeGradient;
-            [self.navigationController pushViewController:vc animated:YES];
+            SSelfDefineViewController *viewController    = [[SSelfDefineViewController alloc] init];
+            viewController.s_fullScreenPopGestureEnabled = YES;
+            viewController.hidesBottomBarWhenPushed      = YES;
+            viewController.type                          = SelfDefineTypeGradient;
+            [self.navigationController pushViewController:viewController animated:YES];
         }
             break;
         case 3: {
-            SSelfDefineViewController *vc = [[SSelfDefineViewController alloc] init];
-            vc.s_fullScreenPopGestureEnabled = YES;
-            vc.type = SelfDefineTypeNormal;
-            vc.index = 0;
-            vc.backColor = [UIColor redColor];
-            [self.navigationController pushViewController:vc animated:YES];
+            SSelfDefineViewController *viewController      = [[SSelfDefineViewController alloc] init];
+            viewController.s_fullScreenPopGestureEnabled   = YES;
+            viewController.type                            = SelfDefineTypeNormal;
+            viewController.index                           = 0;
+            viewController.backColor                       = [UIColor redColor];
+            [self.navigationController pushViewController:viewController animated:YES];
         }
+            break;
+        default:
             break;
     }
 }

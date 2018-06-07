@@ -70,17 +70,17 @@
 
 #pragma mark - Action Methods
 - (void)onTapView {
-    if (4 == self.index) {
+    if (self.index == 4) {
         return ;
     }
-    SSelfDefineViewController *vc = [[SSelfDefineViewController alloc] init];
-    vc.type = SelfDefineTypeNormal;
-    vc.backColor = [UIColor colorWithRed:(random() % 255) / 255.0
-                                   green:(random() % 255) / 255.0
-                                    blue:(random() % 255) / 255.0
-                                   alpha:1];
-    vc.index = self.index + 1;
-    [self.navigationController pushViewController:vc animated:YES];
+    SSelfDefineViewController *viewController = [[SSelfDefineViewController alloc] init];
+    viewController.type = SelfDefineTypeNormal;
+    viewController.backColor = [UIColor colorWithRed:(random() % 255) / 255.0
+                                               green:(random() % 255) / 255.0
+                                                blue:(random() % 255) / 255.0
+                                               alpha:1];
+    viewController.index = self.index + 1;
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 #pragma mark - Getters
@@ -88,10 +88,10 @@
     if (!_gradientLayer) {
         _gradientLayer = [CAGradientLayer layer];
         _gradientLayer.frame = self.view.bounds;
-        _gradientLayer.colors = [NSArray arrayWithObjects:(id)UIColorFromRGB(77, 19, 87).CGColor,
-                                                          (id)UIColorFromRGB(113, 4, 52).CGColor, nil];
+        _gradientLayer.colors = @[(id)UIColorFromRGB(77, 19, 87).CGColor,
+                                  (id)UIColorFromRGB(113, 4, 52).CGColor];
     }
-    
+
     return _gradientLayer;
 }
 
