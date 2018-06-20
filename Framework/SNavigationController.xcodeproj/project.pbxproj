@@ -11,7 +11,6 @@
 		3612C56E202DA1ED0086B360 /* UIViewController+SNavigationExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3612C56B202DA1ED0086B360 /* UIViewController+SNavigationExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3612C56F202DA1ED0086B360 /* UIViewController+SNavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3612C56C202DA1ED0086B360 /* UIViewController+SNavigationExtension.m */; };
 		36A7D8A72026DD6900F2E2F3 /* SNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A7D8A52026DD6900F2E2F3 /* SNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36A7D8A82026DD6900F2E2F3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36A7D8A62026DD6900F2E2F3 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,7 +146,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A7D8A82026DD6900F2E2F3 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

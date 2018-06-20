@@ -2,33 +2,53 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode9.2
 language: objective-c
-# cache: cocoapods
-xcode_project: SNavigationControllerExample.xcworkspace
-xcode_scheme: SNavigationControllerExample
+osx_image: xcode9.3
 
-podfile: Example/Podfile
+cache:
+  - cocoapods
 
-matrix:
-  include:
-    - os: osx
-      osx_image: xcode9
-    - os: osx
-      osx_image: xcode9.1
-    - os: osx
-      osx_image: xcode9.2
+branches:
+    only:
+    - master
+    - develop
+
+env:
+    global:
+    - FRAMEWORK_PROJECT="Framework/SNavigationController.xcodeproj"
+    - FRAMEWORK_TARGET="SNavigationController"
+
+    - EXAMPLE_WORKSPACE="Example/SNavigationControllerExample.xcworkspace"
+    - EXAMPLE_SCHEME="SNavigationControllerExample"
+
+    matrix:
+    - DESTINATION="OS=11.3,name=iPhone X"        BUILD_EXAMPLE="YES" POD_LINT="YES" ENABLECCODECOVERAGE="YES"
+    - DESTINATION="OS=10.3.1,name=iPhone 7 Plus" BUILD_EXAMPLE="YES" POD_LINT="NO"  ENABLECCODECOVERAGE="NO"
+    - DESTINATION="OS=9.3,name=iPhone 6"         BUILD_EXAMPLE="YES" POD_LINT="NO"  ENABLECCODECOVERAGE="NO"
+    - DESTINATION="OS=9.3,name=iPhone 6"         BUILD_EXAMPLE="NO"  POD_LINT="NO"  ENABLECCODECOVERAGE="NO"
 
 before_install:
-- gem install cocoapods # Since Travis is not always on latest version
-- pod repo update
-- pod install --project-directory=Example
+  - gem install cocoapods # Since Travis is not always on latest version
+  - pod repo update
+  - pod install --project-directory=Example
 
 script:
-- xcodebuild -project Framework/SNavigationController.xcodeproj -target SNavigationController -destination 'platform=iOS Simulator,name=iPhone 6' | xcpretty
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SNavigationControllerExample.xcworkspace -scheme SNavigationControllerExample -destination 'platform=iOS Simulator,name=iPhone 6' ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
-- sh ./scripts/oclint
+  - set -o pipefail
+
+  - if [ $BUILD_EXAMPLE == "YES" ]; then
+      xcodebuild -workspace "$EXAMPLE_WORKSPACE" -scheme "$EXAMPLE_SCHEME" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO build | xcpretty;
+    else
+      xcodebuild -project "$FRAMEWORK_PROJECT" -target "$FRAMEWORK_TARGET" -destination "$DESTINATION" | xcpretty;
+    fi
+
+  - if [ $ENABLECCODECOVERAGE = "YES"]; then
+      xcodebuild -enableCodeCoverage YES -workspace "$EXAMPLE_WORKSPACE" -scheme "$EXAMPLE_SCHEME" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO test | xcpretty;
+    fi
+
+    # Run `pod lib lint` if specified
+  - if [ $POD_LINT == "YES" ]; then
+        pod lib lint;
+    fi
 
 notifications:
     slack: cyrex-group:ByK4WXNdYYjQ1yYZ2tjDOKyr
