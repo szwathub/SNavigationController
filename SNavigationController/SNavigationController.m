@@ -128,7 +128,7 @@ static NSValue *s_tabBarRectValue;
     if (self.tabBarController && !s_tabBarRectValue) {
         s_tabBarRectValue = [NSValue valueWithCGRect:self.tabBarController.tabBar.frame];
     }
-    
+
 }
 
 - (void)viewDidAppear:(BOOL)animated {
