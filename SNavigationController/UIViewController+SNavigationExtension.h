@@ -18,12 +18,19 @@
 
 @class SNavigationController;
 
-@interface UIViewController (SNavigationExtension)
+@protocol SNavigationItemsConfiguration <NSObject>
+@optional
+- (NSArray <UIBarButtonItem *> *)s_leftBarButtonItems;
+
+@end
+
+@interface UIViewController (SNavigationExtension) <SNavigationItemsConfiguration>
 
 @property (nonatomic, strong) UIImage *s_backButtonImage;
-
 @property (nonatomic, assign) BOOL s_fullScreenPopGestureEnabled;
 
 @property (nonatomic, weak) SNavigationController *s_navigationController;
+
+- (NSArray <UIBarButtonItem *> *)s_leftBarButtonItems;
 
 @end

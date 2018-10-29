@@ -155,10 +155,10 @@
 		36F155F020DD1F09002436F4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				36F155F120DD1F09002436F4 /* SFullScreenGestureViewController.m */,
-				36F155F220DD1F09002436F4 /* SSelfDefineViewController.m */,
 				36F155F320DD1F09002436F4 /* SFullScreenGestureViewController.h */,
+				36F155F120DD1F09002436F4 /* SFullScreenGestureViewController.m */,
 				36F155F420DD1F09002436F4 /* SSelfDefineViewController.h */,
+				36F155F220DD1F09002436F4 /* SSelfDefineViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

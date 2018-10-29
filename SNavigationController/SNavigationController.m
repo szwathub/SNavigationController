@@ -207,12 +207,20 @@ static NSValue *s_tabBarRectValue;
     viewController.s_navigationController = (SNavigationController *)self.navigationController;
 
     UIImage *backButtonImage = viewController.s_backButtonImage;
-
+    
+    NSArray *otherItems = [viewController s_leftBarButtonItems];
     UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithImage:backButtonImage
                                                                        style:UIBarButtonItemStylePlain
                                                                       target:self
                                                                       action:@selector(didTapBackButton)];
-    [viewController.navigationItem setLeftBarButtonItem:backButtonItem];
+    
+    NSMutableArray *allItems = [NSMutableArray array];
+    [allItems addObject:backButtonItem];
+    if (otherItems.count) {
+        [allItems addObjectsFromArray:otherItems];
+    }
+    
+    [viewController.navigationItem setLeftBarButtonItems:allItems];
 
     [self.navigationController pushViewController:[SWrapViewController wrapViewControllerWithViewController:viewController]
                                          animated:animated];

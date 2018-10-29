@@ -46,4 +46,10 @@
                              OBJC_ASSOCIATION_ASSIGN);
 }
 
+
+#pragma mark - SNavigationItemConfiguration
+- (NSArray <UIBarButtonItem *> *)s_leftBarButtonItems {
+    return nil;
+}
+
 @end
