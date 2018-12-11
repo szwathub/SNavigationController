@@ -61,20 +61,12 @@ static NSValue *s_tabBarRectValue;
        didShowViewController:(UIViewController *)viewController
                     animated:(BOOL)animated {
 
-    BOOL isRootVC = viewController == navigationController.viewControllers.firstObject;
-
     if (viewController.s_fullScreenPopGestureEnabled) {
-        if (isRootVC) {
-            [self.view removeGestureRecognizer:self.popPanGesture];
-        } else {
-            [self.view addGestureRecognizer:self.popPanGesture];
-        }
+        [self.view addGestureRecognizer:self.popPanGesture];
         self.interactivePopGestureRecognizer.delegate = self.popGestureDelegate;
         self.interactivePopGestureRecognizer.enabled = NO;
     } else {
-        if (isRootVC) {
-            [self.view removeGestureRecognizer:self.popPanGesture];
-        }
+        [self.view removeGestureRecognizer:self.popPanGesture];
         self.interactivePopGestureRecognizer.delegate = self;
         self.interactivePopGestureRecognizer.enabled = NO;
     }
