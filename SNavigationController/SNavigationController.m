@@ -24,6 +24,7 @@ static NSValue *s_tabBarRectValue;
 - (instancetype)initWithRootViewController:(UIViewController *)rootViewController {
     if (self = [super init]) {
         rootViewController.s_navigationController = self;
+        rootViewController.s_backButtonImage      = nil;
         self.viewControllers = @[[SWrapViewController wrapViewControllerWithViewController:rootViewController]];
     }
 
@@ -33,6 +34,7 @@ static NSValue *s_tabBarRectValue;
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
         self.viewControllers.firstObject.s_navigationController = self;
+         self.viewControllers.firstObject.s_backButtonImage     = nil;
         self.viewControllers = @[[SWrapViewController wrapViewControllerWithViewController:self.viewControllers.firstObject]];
     }
 
@@ -61,8 +63,14 @@ static NSValue *s_tabBarRectValue;
        didShowViewController:(UIViewController *)viewController
                     animated:(BOOL)animated {
 
+    BOOL isRootVC = (viewController == navigationController.viewControllers.firstObject);
+
     if (viewController.s_fullScreenPopGestureEnabled) {
-        [self.view addGestureRecognizer:self.popPanGesture];
+        if (isRootVC) {
+            [self.view removeGestureRecognizer:self.popPanGesture];
+        } else {
+            [self.view addGestureRecognizer:self.popPanGesture];
+        }
         self.interactivePopGestureRecognizer.delegate = self.popGestureDelegate;
         self.interactivePopGestureRecognizer.enabled = NO;
     } else {

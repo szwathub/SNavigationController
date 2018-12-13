@@ -50,7 +50,7 @@
 		36F155E420DD1DFB002436F4 /* UIViewController+SNavigationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SNavigationExtension.h"; sourceTree = "<group>"; };
 		36F155E520DD1DFC002436F4 /* SNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNavigationController.m; sourceTree = "<group>"; };
 		36F155E620DD1DFC002436F4 /* UIViewController+SNavigationExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SNavigationExtension.m"; sourceTree = "<group>"; };
-		9185545AA3DD2CFE695AAF79 /* SNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = SNavigationController.podspec; sourceTree = "<group>"; };
+		9185545AA3DD2CFE695AAF79 /* SNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = SNavigationController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FD4123EFEECA43EAD953B8BB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
