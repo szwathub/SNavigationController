@@ -34,7 +34,7 @@ static NSValue *s_tabBarRectValue;
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
         self.viewControllers.firstObject.s_navigationController = self;
-         self.viewControllers.firstObject.s_backButtonImage     = nil;
+        self.viewControllers.firstObject.s_backButtonImage     = nil;
         self.viewControllers = @[[SWrapViewController wrapViewControllerWithViewController:self.viewControllers.firstObject]];
     }
 
@@ -118,6 +118,8 @@ static NSValue *s_tabBarRectValue;
     SWrapViewController *wrapViewController = [[SWrapViewController alloc] init];
     [wrapViewController.view addSubview:wrapNavController.view];
     [wrapViewController addChildViewController:wrapNavController];
+
+    viewController.s_wrapViewController = wrapViewController;
 
     return wrapViewController;
 }
@@ -203,28 +205,35 @@ static NSValue *s_tabBarRectValue;
                                                  animated:animated];
 }
 
-- (void)setViewControllers:(NSArray<UIViewController *> *)viewControllers animated:(BOOL)animated {
-    [super setViewControllers:viewControllers animated:animated];
-    
+- (void)s_setViewControllers:(NSArray<UIViewController *> *)viewControllers animated:(BOOL)animated {
+    NSMutableArray *result = [NSMutableArray array];
     for (UIViewController *viewController in viewControllers) {
-        viewController.s_navigationController = (SNavigationController *)self.navigationController;
-        
-        UIImage *backButtonImage = viewController.s_backButtonImage;
-        
-        NSArray *otherItems = [viewController s_leftBarButtonItems];
-        UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithImage:backButtonImage
-                                                                           style:UIBarButtonItemStylePlain
-                                                                          target:self
-                                                                          action:@selector(didTapBackButton)];
-        
-        NSMutableArray *allItems = [NSMutableArray array];
-        [allItems addObject:backButtonItem];
-        if (otherItems.count) {
-            [allItems addObjectsFromArray:otherItems];
+        if (!viewController.s_wrapViewController) {
+            viewController.s_navigationController = (SNavigationController *)self.navigationController;
+
+            UIImage *backButtonImage = viewController.s_backButtonImage;
+
+            NSArray *otherItems = [viewController s_leftBarButtonItems];
+            UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithImage:backButtonImage
+                                                                               style:UIBarButtonItemStylePlain
+                                                                              target:self
+                                                                              action:@selector(didTapBackButton)];
+
+            NSMutableArray *allItems = [NSMutableArray array];
+            [allItems addObject:backButtonItem];
+            if (otherItems.count) {
+                [allItems addObjectsFromArray:otherItems];
+            }
+
+            [viewController.navigationItem setLeftBarButtonItems:allItems];
+
+            [result addObject:[SWrapViewController wrapViewControllerWithViewController:viewController]];
+        } else {
+            [result addObject:viewController.s_wrapViewController];
         }
-        
-        [viewController.navigationItem setLeftBarButtonItems:allItems];
     }
+
+    [self.navigationController setViewControllers:result animated:animated];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {

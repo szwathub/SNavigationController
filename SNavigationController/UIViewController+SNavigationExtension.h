@@ -17,20 +17,38 @@
 #import <UIKit/UIKit.h>
 
 @class SNavigationController;
+@class SWrapViewController;
 
+#pragma mark -
+#pragma mark - SNavigationItemsConfiguration
 @protocol SNavigationItemsConfiguration <NSObject>
 @optional
 - (NSArray <UIBarButtonItem *> *)s_leftBarButtonItems;
 
 @end
 
+
+#pragma mark -
+#pragma mark - UIViewController (SNavigationExtension)
 @interface UIViewController (SNavigationExtension) <SNavigationItemsConfiguration>
 
 @property (nonatomic, strong) UIImage *s_backButtonImage;
 @property (nonatomic, assign) BOOL s_fullScreenPopGestureEnabled;
 
 @property (nonatomic, weak) SNavigationController *s_navigationController;
+@property (nonatomic, weak) SWrapViewController *s_wrapViewController;
 
 - (NSArray <UIBarButtonItem *> *)s_leftBarButtonItems;
 
 @end
+
+
+#pragma mark -
+#pragma mark - UINavigationController (SNavigationExtension)
+@interface UINavigationController (SNavigationExtension)
+
+- (void)s_setViewControllers:(NSArray<UIViewController *> *)viewControllers animated:(BOOL)animated;
+
+@end
+
+
