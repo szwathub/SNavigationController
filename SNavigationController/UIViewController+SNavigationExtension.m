@@ -11,6 +11,9 @@
 #import "SNavigationController.h"
 #import <objc/runtime.h>
 
+
+#pragma mark -
+#pragma mark - UIViewController (SNavigationExtension)
 @implementation UIViewController (SNavigationExtension)
 - (UIImage *)s_backButtonImage {
     return objc_getAssociatedObject(self, _cmd);
@@ -46,10 +49,33 @@
                              OBJC_ASSOCIATION_ASSIGN);
 }
 
+- (SWrapViewController *)s_wrapViewController {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setS_wrapViewController:(SWrapViewController *)s_wrapViewController {
+    objc_setAssociatedObject(self,
+                             @selector(s_wrapViewController),
+                             s_wrapViewController,
+                             OBJC_ASSOCIATION_ASSIGN);
+}
+
 
 #pragma mark - SNavigationItemConfiguration
 - (NSArray <UIBarButtonItem *> *)s_leftBarButtonItems {
     return nil;
+}
+
+@end
+
+
+
+#pragma mark -
+#pragma mark - UINavigationController (SNavigationExtension)
+@implementation UINavigationController (SNavigationExtension)
+
+- (void)s_setViewControllers:(NSArray<UIViewController *> *)viewControllers animated:(BOOL)animated {
+    
 }
 
 @end
