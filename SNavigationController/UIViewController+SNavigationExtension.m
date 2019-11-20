@@ -38,6 +38,17 @@
                              OBJC_ASSOCIATION_RETAIN);
 }
 
+- (void (^)(void))popViewControllerBlock {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setPopViewControllerBlock:(void (^)(void))popViewControllerBlock {
+    objc_setAssociatedObject(self,
+                             @selector(popViewControllerBlock),
+                             popViewControllerBlock,
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
 - (SNavigationController *)s_navigationController {
     return objc_getAssociatedObject(self, _cmd);
 }

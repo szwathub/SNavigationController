@@ -35,6 +35,8 @@
 @property (nonatomic, strong) UIImage *s_backButtonImage;
 @property (nonatomic, assign) BOOL s_fullScreenPopGestureEnabled;
 
+@property (nonatomic, copy) void(^popViewControllerBlock)(void);
+
 @property (nonatomic, weak) SNavigationController *s_navigationController;
 @property (nonatomic, weak) SWrapViewController *s_wrapViewController;
 

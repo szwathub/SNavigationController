@@ -260,7 +260,15 @@ static NSValue *s_tabBarRectValue;
 }
 
 - (void)didTapBackButton {
-    [self.navigationController popViewControllerAnimated:YES];
+    SNavigationController *navigationController = (SNavigationController *)self.navigationController;
+    SWrapViewController *swrapController = (SWrapViewController *)navigationController.topViewController;
+    UIViewController *viewController = swrapController.rootViewController;
+
+    if (viewController.popViewControllerBlock) {
+        viewController.popViewControllerBlock();
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 -(void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion{
