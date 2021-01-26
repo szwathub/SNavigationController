@@ -1,0 +1,38 @@
+#!/usr/bin/env sh
+
+PROJECT_NAME=SNavigationControllerExample
+SCHEME_NAME=SNavigationControllerExample
+
+which brew &> /dev/null
+if [[ $? -ne 0 ]]; then
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+which oclint &> /dev/null
+if [[ $? -ne 0 ]]; then
+    brew tap oclint/formulae
+    brew install
+fi
+
+
+xcodebuild clean -workspace Example/$PROJECT_NAME.xcworkspace -scheme $SCHEME_NAME | xcpretty
+xcodebuild -workspace Example/$PROJECT_NAME.xcworkspace \
+           -scheme $SCHEME_NAME                         \
+           COMPILER_INDEX_STORE_ENABLE=NO               \
+           analyze | tee xcodebuild.log | xcpretty --report json-compilation-database --output compile_commands.json
+
+oclint-json-compilation-database -e Pods -- \
+        -rc LONG_LINE=200                   \
+        -rc LONG_METHOD=100                 \
+        -rc LONG_VARIABLE_NAME=40           \
+        -max-priority-1=100000              \
+        -max-priority-2=100000              \
+        -max-priority-3=100000              \
+        -disable-rule=HighNcssMethod        \
+        -disable-rule=UseNumberLiteral      \
+        -disable-rule=UselessParentheses    \
+        -disable-rule=UnusedMethodParameter \
+        -report-type html -o reports.html
+
+rm -f compile_commands.json
+rm xcodebuild.log
