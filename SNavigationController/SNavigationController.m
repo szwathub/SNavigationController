@@ -21,6 +21,8 @@ static NSValue *s_tabBarRectValue;
 @end
 
 @implementation SNavigationController
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-designated-initializers"
 - (instancetype)initWithRootViewController:(UIViewController *)rootViewController {
     if (self = [super init]) {
         rootViewController.s_navigationController = self;
@@ -30,6 +32,7 @@ static NSValue *s_tabBarRectValue;
 
     return self;
 }
+#pragma clang diagnostic pop
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
