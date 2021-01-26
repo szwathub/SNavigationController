@@ -2,13 +2,13 @@
 ///  Copyright © 2019 ZhiweiSun. All rights reserved.
 ///
 ///  File name: SNavigationControllerTests.swift
-///  Author:    ZhiweiSun @Cyrex
+///  Author:    ZhiweiSun @szwathub
 ///  E-mail:    szwathub@gmail.com
 ///
 ///  Description:
 ///
 ///  History:
-///      06/12/2019: Created by Cyrex on 06/12/2019
+///      06/12/2019: Created by szwathub on 06/12/2019
 ///
 
 import XCTest

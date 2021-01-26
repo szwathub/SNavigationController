@@ -2,13 +2,13 @@
 //  Copyright © 2019 ZhiweiSun. All rights reserved.
 //
 //  File name: SNavigationController.swift
-//  Author:    Zhiwei Sun @Cyrex
+//  Author:    Zhiwei Sun @szwathub
 //  E-mail:    szwathub@gmail.com
 //
 //  Description:
 //
 //  History:
-//      2019/6/12: Created by Cyrex on 2019/6/12
+//      2019/6/12: Created by szwathub on 2019/6/12
 //
 
 import UIKit
@@ -60,7 +60,10 @@ open class SNavigationController: UINavigationController {
 
 // MARK: - UINavigationControllerDelegate
 extension SNavigationController: UINavigationControllerDelegate {
-    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+    public func navigationController(_ navigationController: UINavigationController,
+                                     didShow viewController: UIViewController,
+                                                   animated: Bool) {
+
         let isRootVC: Bool = (viewController == navigationController.viewControllers.first)
 
         if viewController.s_fullScreenPopGestureEnabled {
@@ -101,7 +104,7 @@ extension SNavigationController: UIGestureRecognizerDelegate {
     }
 
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
-                                  shouldRequireFailureOf otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        shouldRequireFailureOf otherGestureRecognizer: UIGestureRecognizer) -> Bool {
 
         return gestureRecognizer.isKind(of: UIScreenEdgePanGestureRecognizer.self)
     }
