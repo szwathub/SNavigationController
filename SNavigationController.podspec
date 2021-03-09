@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SNavigationController'
   s.version          = '2.0.0'
-  s.summary          = 'A simple library for replacement UINavigationController.'s
+  s.summary          = 'A simple library for replacement UINavigationController.'
   s.description      = <<-DESC
 A simple library for replacement UINavigationController, you can self-define navigationController.
                        DESC
