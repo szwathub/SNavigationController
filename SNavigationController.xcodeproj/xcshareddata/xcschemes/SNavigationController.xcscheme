@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3601B55A200C90960011CCAE"
+               BlueprintIdentifier = "36307BE5200CD79200D53049"
                BuildableName = "SNavigationController.framework"
                BlueprintName = "SNavigationController"
                ReferencedContainer = "container:SNavigationController.xcodeproj">
@@ -26,22 +26,33 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3601B55A200C90960011CCAE"
+            BlueprintIdentifier = "36307BE5200CD79200D53049"
             BuildableName = "SNavigationController.framework"
             BlueprintName = "SNavigationController"
             ReferencedContainer = "container:SNavigationController.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "36307BE5200CD79200D53049"
+            BuildableName = "SNavigationController.framework"
+            BlueprintName = "SNavigationController"
+            ReferencedContainer = "container:SNavigationController.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "36F155D520DD0FC4002436F4"
+               BlueprintIdentifier = "3647414120DCD1B4007C975D"
                BuildableName = "SNavigationControllerTests.xctest"
                BlueprintName = "SNavigationControllerTests"
                ReferencedContainer = "container:SNavigationController.xcodeproj">
@@ -62,7 +73,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3601B55A200C90960011CCAE"
+            BlueprintIdentifier = "36307BE5200CD79200D53049"
             BuildableName = "SNavigationController.framework"
             BlueprintName = "SNavigationController"
             ReferencedContainer = "container:SNavigationController.xcodeproj">
@@ -78,7 +89,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3601B55A200C90960011CCAE"
+            BlueprintIdentifier = "36307BE5200CD79200D53049"
             BuildableName = "SNavigationController.framework"
             BlueprintName = "SNavigationController"
             ReferencedContainer = "container:SNavigationController.xcodeproj">

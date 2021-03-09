@@ -1,13 +1,36 @@
-# SNavigationController
+<h1 align="center">SNavigationController</h1>
 
-[![CI Status](http://img.shields.io/travis/Cyrex/SNavigationController.svg?style=flat)](https://travis-ci.org/Cyrex/SNavigationController)
-[![codecov.io](https://codecov.io/github/Cyrex/SNavigationController/coverage.svg?branch=master)](https://codecov.io/github/Cyrex/SNavigationController?branch=master)
-[![Version](https://img.shields.io/cocoapods/v/SNavigationController.svg?style=flat)](http://cocoapods.org/pods/SNavigationController)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Cyrex/SNavigationController)
-[![License](https://img.shields.io/cocoapods/l/SNavigationController.svg?style=flat)](http://cocoapods.org/pods/SNavigationController)
-[![Platform](https://img.shields.io/cocoapods/p/SNavigationController.svg?style=flat)](http://cocoapods.org/pods/SNavigationController)
+<p align="center">
+    <a href="https://travis-ci.com/szwathub/SNavigationController">
+        <img src="https://travis-ci.com/szwathub/SNavigationController.svg?branch=master" alt="Travis Build Status">
+    </a>
+    <a href="https://codecov.io/github/szwathub/SNavigationController">
+        <img src="https://codecov.io/gh/szwathub/SNavigationController/branch/master/graph/badge.svg" alt="Codecov">
+    </a>
+    <a href="http://cocoapods.org/pods/SNavigationController">
+        <img src="https://img.shields.io/cocoapods/v/SNavigationController.svg?style=flat" alt="CocoaPods Version">
+    </a>
+    <a href="https://houndci.com">
+        <img src="https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg" alt="Hound">
+    </a>
+    <a href="https://github.com/szwathub/SNavigationController">
+        <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible">
+    </a>
+</p>
 
-## Example
+
+<p align="center">
+    <a href="http://cocoapods.org/pods/SNavigationController">
+        <img src="https://img.shields.io/cocoapods/l/SNavigationController.svg?style=flat" alt="License">
+    </a>
+    <a href="http://cocoapods.org/pods/SNavigationController">
+        <img src="https://img.shields.io/cocoapods/p/SNavigationController.svg?style=flat" alt="Platform">
+    </a>
+    <a href="https://github.com/szwathub/SNavigationController/pulls">
+        <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome">
+    </a>
+</p>
+
 
 ## Requirements
 
@@ -26,7 +49,7 @@ To install with carthage, follow the instruction on [Carthage](https://github.co
 
 ##### Cartfile
 ```ruby
-github "Cyrex/SNavigationController"
+github "szwathub/SNavigationController"
 ```
 
 #### Manual Installation
@@ -34,7 +57,7 @@ Copy and add all of the files in the `SNavigationController` directory (and its 
 
 ## Author
 
-Cyrex, szwathub@gmail.com
+szwathub, szwathub@gmail.com
 
 ## License
 

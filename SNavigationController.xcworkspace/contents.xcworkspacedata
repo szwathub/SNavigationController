@@ -5,6 +5,6 @@
       location = "group:SNavigationController.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Examples/SNavigationControllerExample.xcodeproj">
+      location = "group:SNavigationControllerDemo-iOS/SNavigationControllerDemo-iOS.xcodeproj">
    </FileRef>
 </Workspace>

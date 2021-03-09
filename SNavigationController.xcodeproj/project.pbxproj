@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		36FD7A7920E08BDD002F94A9 /* Cleanup Whitespace */ = {
+		6A4C4FED6E4C792F8C426530 /* Cleanup Whitespace */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 36FD7A7A20E08BDD002F94A9 /* Build configuration list for PBXAggregateTarget "Cleanup Whitespace" */;
+			buildConfigurationList = F486763FB6EED6ACBADEBA88 /* Build configuration list for PBXAggregateTarget "Cleanup Whitespace" */;
 			buildPhases = (
-				36FD7A7D20E08BE7002F94A9 /* Cleanup Whitespace */,
+				CC0256104920A7B2CCD40CD6 /* Cleanup Whitespace */,
 			);
 			dependencies = (
 			);
@@ -21,139 +21,137 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		36F155D020DD0FAB002436F4 /* SNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F155CE20DD0FAB002436F4 /* SNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36F155D920DD0FC5002436F4 /* SNavigationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F155D820DD0FC5002436F4 /* SNavigationControllerTests.m */; };
-		36F155DB20DD0FC5002436F4 /* SNavigationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3601B55B200C90960011CCAE /* SNavigationController.framework */; };
-		36F155E720DD1DFC002436F4 /* UIViewController+SNavigationExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F155E420DD1DFB002436F4 /* UIViewController+SNavigationExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36F155E820DD1DFC002436F4 /* SNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F155E520DD1DFC002436F4 /* SNavigationController.m */; };
-		36F155E920DD1DFC002436F4 /* UIViewController+SNavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F155E620DD1DFC002436F4 /* UIViewController+SNavigationExtension.m */; };
+		3647414720DCD1B4007C975D /* SNavigationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36307BE6200CD79200D53049 /* SNavigationController.framework */; };
+		3647415020DCD1F3007C975D /* SNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3647414E20DCD1F3007C975D /* SNavigationControllerTests.swift */; };
+		3669624922B10144006D27A5 /* WrapNavigationController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 36CBCABD22B0E968006CF8A1 /* WrapNavigationController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		3669624B22B116C0006D27A5 /* WrapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669624A22B116C0006D27A5 /* WrapViewController.swift */; };
+		3669624D22B16153006D27A5 /* NavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669624C22B16153006D27A5 /* NavigationControllerExtension.swift */; };
+		3669624E22B16AE1006D27A5 /* WrapViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 3669624A22B116C0006D27A5 /* WrapViewController.swift */; };
+		3669624F22B16AE5006D27A5 /* NavigationControllerExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 3669624C22B16153006D27A5 /* NavigationControllerExtension.swift */; };
+		36CBCAB622B0DAFD006CF8A1 /* SNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBCAB522B0DAFD006CF8A1 /* SNavigationController.swift */; };
+		36CBCAB722B0DBB6006CF8A1 /* SNavigationController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 36CBCAB522B0DAFD006CF8A1 /* SNavigationController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		36CBCABE22B0E968006CF8A1 /* WrapNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBCABD22B0E968006CF8A1 /* WrapNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		36F155DC20DD0FC5002436F4 /* PBXContainerItemProxy */ = {
+		3647414820DCD1B4007C975D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3601B552200C90960011CCAE /* Project object */;
+			containerPortal = 36307BDD200CD79200D53049 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3601B55A200C90960011CCAE;
+			remoteGlobalIDString = 36307BE5200CD79200D53049;
 			remoteInfo = SNavigationController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00C94E9D89B1741FE84DA8E2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3601B55B200C90960011CCAE /* SNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		36F155CE20DD0FAB002436F4 /* SNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNavigationController.h; sourceTree = "<group>"; };
-		36F155CF20DD0FAB002436F4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36F155D620DD0FC4002436F4 /* SNavigationControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNavigationControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36F155D820DD0FC5002436F4 /* SNavigationControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNavigationControllerTests.m; sourceTree = "<group>"; };
-		36F155DA20DD0FC5002436F4 /* SNavigationControllerTestsInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SNavigationControllerTestsInfo.plist; sourceTree = "<group>"; };
-		36F155E420DD1DFB002436F4 /* UIViewController+SNavigationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SNavigationExtension.h"; sourceTree = "<group>"; };
-		36F155E520DD1DFC002436F4 /* SNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNavigationController.m; sourceTree = "<group>"; };
-		36F155E620DD1DFC002436F4 /* UIViewController+SNavigationExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SNavigationExtension.m"; sourceTree = "<group>"; };
-		9185545AA3DD2CFE695AAF79 /* SNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = SNavigationController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		FD4123EFEECA43EAD953B8BB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1F8E73EF9583CB7C5B67EA03 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		36307BE6200CD79200D53049 /* SNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3647414220DCD1B4007C975D /* SNavigationControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNavigationControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3647414E20DCD1F3007C975D /* SNavigationControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNavigationControllerTests.swift; sourceTree = "<group>"; };
+		3647414F20DCD1F3007C975D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		364FA07220DA891800D7B25B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3669624A22B116C0006D27A5 /* WrapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapViewController.swift; sourceTree = "<group>"; };
+		3669624C22B16153006D27A5 /* NavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerExtension.swift; sourceTree = "<group>"; };
+		36CBCAB522B0DAFD006CF8A1 /* SNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNavigationController.swift; sourceTree = "<group>"; };
+		36CBCABD22B0E968006CF8A1 /* WrapNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapNavigationController.swift; sourceTree = "<group>"; };
+		4032D2DFB826FAFB59038ABB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		69A61FB91EA1BB0DCD7E5F02 /* SNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = SNavigationController.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3601B557200C90960011CCAE /* Frameworks */ = {
+		36307BE2200CD79200D53049 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36F155D320DD0FC4002436F4 /* Frameworks */ = {
+		3647413F20DCD1B4007C975D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F155DB20DD0FC5002436F4 /* SNavigationController.framework in Frameworks */,
+				3647414720DCD1B4007C975D /* SNavigationController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3601B551200C90960011CCAE = {
+		36307BDC200CD79200D53049 = {
 			isa = PBXGroup;
 			children = (
-				36B6681D200DAFCC0064CEE5 /* SNavigationControllerMetadata */,
-				36F155CD20DD0FAB002436F4 /* SNavigationController */,
-				36F155D720DD0FC5002436F4 /* Tests */,
-				3601B55C200C90960011CCAE /* Products */,
-				36FD7A6720E085BA002F94A9 /* Frameworks */,
+				36B6681E200DB01B0064CEE5 /* SNavigationControllerMetadata */,
+				364FA07020DA891800D7B25B /* SNavigationController */,
+				3647414D20DCD1F3007C975D /* Tests */,
+				36307BE7200CD79200D53049 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3601B55C200C90960011CCAE /* Products */ = {
+		36307BE7200CD79200D53049 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3601B55B200C90960011CCAE /* SNavigationController.framework */,
-				36F155D620DD0FC4002436F4 /* SNavigationControllerTests.xctest */,
+				36307BE6200CD79200D53049 /* SNavigationController.framework */,
+				3647414220DCD1B4007C975D /* SNavigationControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		36B6681D200DAFCC0064CEE5 /* SNavigationControllerMetadata */ = {
+		3647414D20DCD1F3007C975D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9185545AA3DD2CFE695AAF79 /* SNavigationController.podspec */,
-				00C94E9D89B1741FE84DA8E2 /* README.md */,
-				FD4123EFEECA43EAD953B8BB /* LICENSE */,
-			);
-			name = SNavigationControllerMetadata;
-			sourceTree = "<group>";
-		};
-		36F155CD20DD0FAB002436F4 /* SNavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				36F155CE20DD0FAB002436F4 /* SNavigationController.h */,
-				36F155E520DD1DFC002436F4 /* SNavigationController.m */,
-				36F155E420DD1DFB002436F4 /* UIViewController+SNavigationExtension.h */,
-				36F155E620DD1DFC002436F4 /* UIViewController+SNavigationExtension.m */,
-				36F155CF20DD0FAB002436F4 /* Info.plist */,
-			);
-			path = SNavigationController;
-			sourceTree = "<group>";
-		};
-		36F155D720DD0FC5002436F4 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				36F155D820DD0FC5002436F4 /* SNavigationControllerTests.m */,
-				36F155DA20DD0FC5002436F4 /* SNavigationControllerTestsInfo.plist */,
+				3647414E20DCD1F3007C975D /* SNavigationControllerTests.swift */,
+				3647414F20DCD1F3007C975D /* Info.plist */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		36FD7A6720E085BA002F94A9 /* Frameworks */ = {
+		364FA07020DA891800D7B25B /* SNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				36CBCAB522B0DAFD006CF8A1 /* SNavigationController.swift */,
+				3669624A22B116C0006D27A5 /* WrapViewController.swift */,
+				36CBCABD22B0E968006CF8A1 /* WrapNavigationController.swift */,
+				3669624C22B16153006D27A5 /* NavigationControllerExtension.swift */,
+				364FA07220DA891800D7B25B /* Info.plist */,
 			);
-			name = Frameworks;
+			path = SNavigationController;
+			sourceTree = "<group>";
+		};
+		36B6681E200DB01B0064CEE5 /* SNavigationControllerMetadata */ = {
+			isa = PBXGroup;
+			children = (
+				69A61FB91EA1BB0DCD7E5F02 /* SNavigationController.podspec */,
+				1F8E73EF9583CB7C5B67EA03 /* README.md */,
+				4032D2DFB826FAFB59038ABB /* LICENSE */,
+			);
+			name = SNavigationControllerMetadata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3601B558200C90960011CCAE /* Headers */ = {
+		36307BE3200CD79200D53049 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F155D020DD0FAB002436F4 /* SNavigationController.h in Headers */,
-				36F155E720DD1DFC002436F4 /* UIViewController+SNavigationExtension.h in Headers */,
+				36CBCAB722B0DBB6006CF8A1 /* SNavigationController.swift in Headers */,
+				3669624922B10144006D27A5 /* WrapNavigationController.swift in Headers */,
+				3669624F22B16AE5006D27A5 /* NavigationControllerExtension.swift in Headers */,
+				3669624E22B16AE1006D27A5 /* WrapViewController.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3601B55A200C90960011CCAE /* SNavigationController */ = {
+		36307BE5200CD79200D53049 /* SNavigationController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3601B56F200C90960011CCAE /* Build configuration list for PBXNativeTarget "SNavigationController" */;
+			buildConfigurationList = 36307BFA200CD79200D53049 /* Build configuration list for PBXNativeTarget "SNavigationController" */;
 			buildPhases = (
-				3601B556200C90960011CCAE /* Sources */,
-				3601B557200C90960011CCAE /* Frameworks */,
-				3601B558200C90960011CCAE /* Headers */,
-				3601B559200C90960011CCAE /* Resources */,
+				36307BE1200CD79200D53049 /* Sources */,
+				36307BE2200CD79200D53049 /* Frameworks */,
+				36307BE3200CD79200D53049 /* Headers */,
+				36307BE4200CD79200D53049 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -161,78 +159,78 @@
 			);
 			name = SNavigationController;
 			productName = SNavigationController;
-			productReference = 3601B55B200C90960011CCAE /* SNavigationController.framework */;
+			productReference = 36307BE6200CD79200D53049 /* SNavigationController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		36F155D520DD0FC4002436F4 /* SNavigationControllerTests */ = {
+		3647414120DCD1B4007C975D /* SNavigationControllerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36F155DE20DD0FC5002436F4 /* Build configuration list for PBXNativeTarget "SNavigationControllerTests" */;
+			buildConfigurationList = 3647414A20DCD1B4007C975D /* Build configuration list for PBXNativeTarget "SNavigationControllerTests" */;
 			buildPhases = (
-				36F155D220DD0FC4002436F4 /* Sources */,
-				36F155D320DD0FC4002436F4 /* Frameworks */,
-				36F155D420DD0FC4002436F4 /* Resources */,
+				3647413E20DCD1B4007C975D /* Sources */,
+				3647413F20DCD1B4007C975D /* Frameworks */,
+				3647414020DCD1B4007C975D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				36F155DD20DD0FC5002436F4 /* PBXTargetDependency */,
+				3647414920DCD1B4007C975D /* PBXTargetDependency */,
 			);
 			name = SNavigationControllerTests;
 			productName = SNavigationControllerTests;
-			productReference = 36F155D620DD0FC4002436F4 /* SNavigationControllerTests.xctest */;
+			productReference = 3647414220DCD1B4007C975D /* SNavigationControllerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3601B552200C90960011CCAE /* Project object */ = {
+		36307BDD200CD79200D53049 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = ZhiweiSun;
 				TargetAttributes = {
-					3601B55A200C90960011CCAE = {
+					36307BE5200CD79200D53049 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Manual;
 					};
-					36F155D520DD0FC4002436F4 = {
+					3647414120DCD1B4007C975D = {
 						CreatedOnToolsVersion = 9.4;
-						ProvisioningStyle = Automatic;
-					};
-					36FD7A7920E08BDD002F94A9 = {
-						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 3601B555200C90960011CCAE /* Build configuration list for PBXProject "SNavigationController" */;
-			compatibilityVersion = "Xcode 8.0";
+			buildConfigurationList = 36307BE0200CD79200D53049 /* Build configuration list for PBXProject "SNavigationController" */;
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 3601B551200C90960011CCAE;
-			productRefGroup = 3601B55C200C90960011CCAE /* Products */;
+			mainGroup = 36307BDC200CD79200D53049;
+			productRefGroup = 36307BE7200CD79200D53049 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3601B55A200C90960011CCAE /* SNavigationController */,
-				36F155D520DD0FC4002436F4 /* SNavigationControllerTests */,
-				36FD7A7920E08BDD002F94A9 /* Cleanup Whitespace */,
+				36307BE5200CD79200D53049 /* SNavigationController */,
+				3647414120DCD1B4007C975D /* SNavigationControllerTests */,
+				6A4C4FED6E4C792F8C426530 /* Cleanup Whitespace */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3601B559200C90960011CCAE /* Resources */ = {
+		36307BE4200CD79200D53049 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36F155D420DD0FC4002436F4 /* Resources */ = {
+		3647414020DCD1B4007C975D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -242,52 +240,66 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		36FD7A7D20E08BE7002F94A9 /* Cleanup Whitespace */ = {
+		CC0256104920A7B2CCD40CD6 /* Cleanup Whitespace */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 			);
 			name = "Cleanup Whitespace";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\ndirectories=(Examples SNavigationController Tests)\n\nfor directory in \"${directories[@]}\"\ndo\necho \"Cleaning whitespace in directory: $directory\"\nfind $directory -iregex '.*\\.[hm]' -exec sed -E -i '' -e 's/[[:blank:]]*$//' {} \\;\ndone";
+			shellScript = "#!/bin/sh\ndirectories=(Examples SNavigationController Tests)\n\nfor directory in \"${directories[@]}\"\ndo\n    echo \"Cleaning whitespace in directory: $directory\"\n    find $directory -iregex '.*\\.swift' -exec sed -E -i '' -e 's/[[:blank:]]*$//' {} \\;\n    find $directory -iregex '.*\\.[hm]' -exec sed -E -i '' -e 's/[[:blank:]]*$//' {} \\;\ndone\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3601B556200C90960011CCAE /* Sources */ = {
+		36307BE1200CD79200D53049 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F155E920DD1DFC002436F4 /* UIViewController+SNavigationExtension.m in Sources */,
-				36F155E820DD1DFC002436F4 /* SNavigationController.m in Sources */,
+				36CBCAB622B0DAFD006CF8A1 /* SNavigationController.swift in Sources */,
+				3669624D22B16153006D27A5 /* NavigationControllerExtension.swift in Sources */,
+				36CBCABE22B0E968006CF8A1 /* WrapNavigationController.swift in Sources */,
+				3669624B22B116C0006D27A5 /* WrapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36F155D220DD0FC4002436F4 /* Sources */ = {
+		3647413E20DCD1B4007C975D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F155D920DD0FC5002436F4 /* SNavigationControllerTests.m in Sources */,
+				3647415020DCD1F3007C975D /* SNavigationControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		36F155DD20DD0FC5002436F4 /* PBXTargetDependency */ = {
+		3647414920DCD1B4007C975D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3601B55A200C90960011CCAE /* SNavigationController */;
-			targetProxy = 36F155DC20DD0FC5002436F4 /* PBXContainerItemProxy */;
+			target = 36307BE5200CD79200D53049 /* SNavigationController */;
+			targetProxy = 3647414820DCD1B4007C975D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3601B56D200C90960011CCAE /* Debug */ = {
+		12C239C417C1469616F63840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_NAME = "Cleanup Whitespace";
+			};
+			name = Release;
+		};
+		36307BF8200CD79200D53049 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -312,6 +324,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -338,16 +351,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		3601B56E200C90960011CCAE /* Release */ = {
+		36307BF9200CD79200D53049 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -372,6 +387,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -392,18 +408,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		3601B570200C90960011CCAE /* Debug */ = {
+		36307BFB200CD79200D53049 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -411,22 +431,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/SNavigationController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = mh_dylib;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyrex.SNavigationController;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.szwathub.SNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = YES;
 			};
 			name = Debug;
 		};
-		3601B571200C90960011CCAE /* Release */ = {
+		36307BFC200CD79200D53049 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -434,111 +464,120 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/SNavigationController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = mh_dylib;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyrex.SNavigationController;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.szwathub.SNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = YES;
 			};
 			name = Release;
 		};
-		36F155DF20DD0FC5002436F4 /* Debug */ = {
+		3647414B20DCD1B4007C975D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N26M59Z84Z;
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/SNavigationControllerTestsInfo.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				DEVELOPMENT_TEAM = PR5Z5535ZU;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.szwathub.SNavigationControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		36F155E020DD0FC5002436F4 /* Release */ = {
+		3647414C20DCD1B4007C975D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N26M59Z84Z;
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/SNavigationControllerTestsInfo.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				DEVELOPMENT_TEAM = PR5Z5535ZU;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.szwathub.SNavigationControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		36FD7A7B20E08BDD002F94A9 /* Debug */ = {
+		FBDB22B8ABA516619620DBA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N26M59Z84Z;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_NAME = "Cleanup Whitespace";
 			};
 			name = Debug;
-		};
-		36FD7A7C20E08BDD002F94A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N26M59Z84Z;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3601B555200C90960011CCAE /* Build configuration list for PBXProject "SNavigationController" */ = {
+		36307BE0200CD79200D53049 /* Build configuration list for PBXProject "SNavigationController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3601B56D200C90960011CCAE /* Debug */,
-				3601B56E200C90960011CCAE /* Release */,
+				36307BF8200CD79200D53049 /* Debug */,
+				36307BF9200CD79200D53049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3601B56F200C90960011CCAE /* Build configuration list for PBXNativeTarget "SNavigationController" */ = {
+		36307BFA200CD79200D53049 /* Build configuration list for PBXNativeTarget "SNavigationController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3601B570200C90960011CCAE /* Debug */,
-				3601B571200C90960011CCAE /* Release */,
+				36307BFB200CD79200D53049 /* Debug */,
+				36307BFC200CD79200D53049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36F155DE20DD0FC5002436F4 /* Build configuration list for PBXNativeTarget "SNavigationControllerTests" */ = {
+		3647414A20DCD1B4007C975D /* Build configuration list for PBXNativeTarget "SNavigationControllerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				36F155DF20DD0FC5002436F4 /* Debug */,
-				36F155E020DD0FC5002436F4 /* Release */,
+				3647414B20DCD1B4007C975D /* Debug */,
+				3647414C20DCD1B4007C975D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36FD7A7A20E08BDD002F94A9 /* Build configuration list for PBXAggregateTarget "Cleanup Whitespace" */ = {
+		F486763FB6EED6ACBADEBA88 /* Build configuration list for PBXAggregateTarget "Cleanup Whitespace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				36FD7A7B20E08BDD002F94A9 /* Debug */,
-				36FD7A7C20E08BDD002F94A9 /* Release */,
+				12C239C417C1469616F63840 /* Release */,
+				FBDB22B8ABA516619620DBA8 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3601B552200C90960011CCAE /* Project object */;
+	rootObject = 36307BDD200CD79200D53049 /* Project object */;
 }

@@ -2,27 +2,25 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-language: objective-c
-osx_image: xcode9.3
-
-cache:
-  - cocoapods
+language: swift
+osx_image: xcode10.2
 
 branches:
-    only:
-    - master
-    - develop
+   only:
+   - master
+   - develop
+   - feature/swift
 
 env:
-    global:
-    - WORKSPACE="SNavigationController.xcworkspace"
-    - IOS_FRAMEWORK_SCHEME="SNavigationController"
-    - EXAMPLE_SCHEME="SNavigationControllerExample"
+   global:
+   - WORKSPACE="SNavigationController.xcworkspace"
+   - IOS_FRAMEWORK_SCHEME="SNavigationController"
+   - iOS_DEMO_SCHEME="SNavigationControllerDemo-iOS"
 
-    matrix:
-    - DESTINATION="OS=11.3,name=iPhone X"        RUN_TESTS="NO"  BUILD_EXAMPLE="YES" POD_LINT="YES" ENABLECCODECOVERAGE="YES"
-    - DESTINATION="OS=10.3.1,name=iPhone 7 Plus" RUN_TESTS="NO"  BUILD_EXAMPLE="YES" POD_LINT="NO"  ENABLECCODECOVERAGE="NO"
-    - DESTINATION="OS=9.3,name=iPhone 6"         RUN_TESTS="NO"  BUILD_EXAMPLE="YES" POD_LINT="NO"  ENABLECCODECOVERAGE="NO"
+   matrix:
+    - DESTINATION="OS=11.3,name=iPhone X"        RUN_TESTS="NO"  BUILD_DEMO="iOS" POD_LINT="YES" ENABLECCODECOVERAGE="YES"
+    - DESTINATION="OS=10.3.1,name=iPhone 7 Plus" RUN_TESTS="NO"  BUILD_DEMO="iOS" POD_LINT="NO"  ENABLECCODECOVERAGE="NO"
+    - DESTINATION="OS=9.3,name=iPhone 6"         RUN_TESTS="NO"  BUILD_DEMO="iOS" POD_LINT="NO"  ENABLECCODECOVERAGE="NO"
 
 script:
 - set -o pipefail
@@ -33,18 +31,23 @@ script:
     xcodebuild -workspace "$WORKSPACE" -scheme "$IOS_FRAMEWORK_SCHEME" -destination "$DESTINATION" | xcpretty;
   fi
 
-- if [ $BUILD_EXAMPLE == "YES" ]; then
-    xcodebuild -workspace "$WORKSPACE" -scheme "$EXAMPLE_SCHEME" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO build | xcpretty;
+- if [ $BUILD_DEMO == "iOS" ]; then
+    xcodebuild -workspace "$WORKSPACE" -scheme "$iOS_DEMO_SCHEME" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO build | xcpretty;
   fi
 
 - if [ $ENABLECCODECOVERAGE = "YES" ]; then
-    xcodebuild test -enableCodeCoverage YES -workspace "$WORKSPACE" -scheme "$EXAMPLE_SCHEME" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO | xcpretty;
+    xcodebuild -enableCodeCoverage YES -workspace "$WORKSPACE" -scheme "$IOS_FRAMEWORK_SCHEME" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO test | xcpretty;
   fi
 
-after_success:
-- if [ $ENABLECCODECOVERAGE = "YES" ]; then
-    bash <(curl -s https://codecov.io/bash);
+# Run `pod lib lint` if specified
+- if [ $POD_LINT == "YES" ]; then
+    pod lib lint;
   fi
 
 notifications:
-    slack: cyrex-group:ByK4WXNdYYjQ1yYZ2tjDOKyr
+   slack: cyrex-group:ByK4WXNdYYjQ1yYZ2tjDOKyr
+
+after_success:
+- if [ $ENABLECCODECOVERAGE = "YES"]; then
+    bash <(curl -s https://codecov.io/bash)
+  fi
