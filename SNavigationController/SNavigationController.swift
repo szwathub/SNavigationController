@@ -41,6 +41,10 @@ open class SNavigationController: UINavigationController {
         super.init(coder: aDecoder)
         fatalError("init(coder:) has not been implemented")
     }
+    
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
 
     override open func viewDidLoad() {
         super.viewDidLoad()
