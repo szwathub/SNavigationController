@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-
-REMOTE_BRANCH=master
-PROJECT_NAME=SNavigationController
-POD_SPEC=SNavigationController.podspec
-
-POD=${COCOAPODS:-pod}
