@@ -14,7 +14,7 @@
 import UIKit
 
 @objc protocol SNavigationItemsConfiguration {
-    @objc optional func leftBarButtonItems() -> [UIBarButtonItem]
+    @objc optional func configLeftBarButtonItems() -> [UIBarButtonItem]
 }
 
 extension UIViewController {
@@ -63,7 +63,7 @@ extension UIViewController {
 }
 
 extension UIViewController: SNavigationItemsConfiguration {
-    func leftBarButtonItems() -> [UIBarButtonItem] {
+    open func configLeftBarButtonItems() -> [UIBarButtonItem] {
         return []
     }
 }

@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "SNavigationController",
             dependencies: [],
-            path: "Sources"),
+            path: "SNavigationController"),
         .testTarget(
             name: "SNavigationControllerTests",
             dependencies: ["SNavigationController"],

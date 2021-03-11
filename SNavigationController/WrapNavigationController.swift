@@ -42,7 +42,7 @@ final class WrapNavigationController: UINavigationController {
             } else {
                 viewController.s_navigationController = navigationController as? SNavigationController
 
-                let otherItems: [UIBarButtonItem] = viewController.leftBarButtonItems()
+                let otherItems: [UIBarButtonItem] = viewController.configLeftBarButtonItems()
                 let backButtonItem: UIBarButtonItem = UIBarButtonItem(image: viewController.s_backButtonImage,
                                                                       style: .plain,
                                                                      target: self,
@@ -65,7 +65,7 @@ final class WrapNavigationController: UINavigationController {
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         viewController.s_navigationController = navigationController as? SNavigationController
 
-        let otherItems: [UIBarButtonItem] = viewController.leftBarButtonItems()
+        let otherItems: [UIBarButtonItem] = viewController.configLeftBarButtonItems()
 
         let backButtonItem = UIBarButtonItem(image: viewController.s_backButtonImage,
                                              style: .plain,

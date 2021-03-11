@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SNavigationControllerDemo-iOS/SNavigationControllerDemo-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SNavigationController.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:SNavigationControllerDemo-iOS/SNavigationControllerDemo-iOS.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
