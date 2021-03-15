@@ -26,38 +26,38 @@ extension UIViewController {
     }
 
     @objc public var s_backButtonImage: UIImage? {
-        set {
-            objc_setAssociatedObject(self, &AssociatedKeys.backButtonImage, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.backButtonImage) as? UIImage
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.backButtonImage, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
 
     @objc public var s_fullScreenPopGestureEnabled: Bool {
-        set {
-            objc_setAssociatedObject(self, &AssociatedKeys.popGesture, newValue, .OBJC_ASSOCIATION_ASSIGN)
-        }
         get {
             return (objc_getAssociatedObject(self, &AssociatedKeys.popGesture) != nil)
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.popGesture, newValue, .OBJC_ASSOCIATION_ASSIGN)
         }
     }
 
     @objc public var s_navigationController: SNavigationController? {
-        set {
-            objc_setAssociatedObject(self, &AssociatedKeys.navigationController, newValue, .OBJC_ASSOCIATION_ASSIGN)
-        }
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.navigationController) as? SNavigationController
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.navigationController, newValue, .OBJC_ASSOCIATION_ASSIGN)
         }
     }
 
     var s_wrapViewController: WrapViewController? {
-        set {
-            objc_setAssociatedObject(self, &AssociatedKeys.wrapViewController, newValue, .OBJC_ASSOCIATION_ASSIGN)
-        }
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.wrapViewController) as? WrapViewController
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.wrapViewController, newValue, .OBJC_ASSOCIATION_ASSIGN)
         }
     }
 }

@@ -25,9 +25,6 @@ final class WrapViewController: UIViewController {
     }
 
     override var s_fullScreenPopGestureEnabled: Bool {
-        set {
-            super.s_fullScreenPopGestureEnabled = newValue
-        }
         get {
             if let fullScreenPopGestureEnabled = rootViewController?.s_fullScreenPopGestureEnabled {
                 return fullScreenPopGestureEnabled
@@ -35,12 +32,12 @@ final class WrapViewController: UIViewController {
 
             return false
         }
+        set {
+            super.s_fullScreenPopGestureEnabled = newValue
+        }
     }
 
     override var hidesBottomBarWhenPushed: Bool {
-        set {
-            super.hidesBottomBarWhenPushed = newValue
-        }
         get {
             if let hidesBottomBarWhenPushed = rootViewController?.hidesBottomBarWhenPushed {
                 return hidesBottomBarWhenPushed
@@ -48,12 +45,12 @@ final class WrapViewController: UIViewController {
 
             return false
         }
+        set {
+            super.hidesBottomBarWhenPushed = newValue
+        }
     }
 
     override var tabBarItem: UITabBarItem? {
-        set {
-            super.tabBarItem = newValue
-        }
         get {
             if let tabBarItem = rootViewController?.tabBarItem {
                 return tabBarItem
@@ -61,14 +58,17 @@ final class WrapViewController: UIViewController {
 
             return nil
         }
+        set {
+            super.tabBarItem = newValue
+        }
     }
 
     override var title: String? {
-        set {
-            super.title = newValue
-        }
         get {
             return rootViewController?.title
+        }
+        set {
+            super.title = newValue
         }
     }
 

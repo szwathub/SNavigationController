@@ -4,6 +4,7 @@ disabled_rules:
   - function_body_length
   - identifier_name
   - vertical_parameter_alignment
+  - vertical_whitespace
 included:
-  - Sources
+  - SNavigationController
   - Tests
