@@ -15,8 +15,8 @@ import UIKit
 
 var s_tabBarRectValue: NSValue?
 
-final class WrapViewController: UIViewController {
-    var rootViewController: UIViewController? {
+public class WrapViewController: UIViewController {
+    public var rootViewController: UIViewController? {
         if let wrapNavController = children.first as? WrapNavigationController {
             return wrapNavController.topViewController
         }
@@ -24,7 +24,7 @@ final class WrapViewController: UIViewController {
         return nil
     }
 
-    override var s_fullScreenPopGestureEnabled: Bool {
+    public override var s_fullScreenPopGestureEnabled: Bool {
         get {
             if let fullScreenPopGestureEnabled = rootViewController?.s_fullScreenPopGestureEnabled {
                 return fullScreenPopGestureEnabled
@@ -37,7 +37,7 @@ final class WrapViewController: UIViewController {
         }
     }
 
-    override var hidesBottomBarWhenPushed: Bool {
+    public override var hidesBottomBarWhenPushed: Bool {
         get {
             if let hidesBottomBarWhenPushed = rootViewController?.hidesBottomBarWhenPushed {
                 return hidesBottomBarWhenPushed
@@ -50,7 +50,7 @@ final class WrapViewController: UIViewController {
         }
     }
 
-    override var tabBarItem: UITabBarItem? {
+    public override var tabBarItem: UITabBarItem? {
         get {
             if let tabBarItem = rootViewController?.tabBarItem {
                 return tabBarItem
@@ -63,7 +63,7 @@ final class WrapViewController: UIViewController {
         }
     }
 
-    override var title: String? {
+    public override var title: String? {
         get {
             return rootViewController?.title
         }
@@ -72,11 +72,11 @@ final class WrapViewController: UIViewController {
         }
     }
 
-    override var childForStatusBarStyle: UIViewController? {
+    public override var childForStatusBarStyle: UIViewController? {
         return rootViewController
     }
 
-    override var childForStatusBarHidden: UIViewController? {
+    public override var childForStatusBarHidden: UIViewController? {
         return rootViewController
     }
 
@@ -93,7 +93,7 @@ final class WrapViewController: UIViewController {
         return wrapViewController
     }
 
-    override func viewDidLayoutSubviews() {
+    public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
         guard let barController = tabBarController else {
@@ -105,7 +105,7 @@ final class WrapViewController: UIViewController {
         }
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         guard let tabBarController = tabBarController, let rootController = rootViewController else {
@@ -117,7 +117,7 @@ final class WrapViewController: UIViewController {
         }
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         guard let tabBarController = tabBarController, let rectValue = s_tabBarRectValue else {
