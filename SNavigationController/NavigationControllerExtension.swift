@@ -25,7 +25,7 @@ extension UIViewController {
         static var wrapViewController: String = "com.snavigationcontroller.wrapViewcontroller"
     }
 
-    @objc public var s_backButtonImage: UIImage? {
+    @objc public var backButtonImage: UIImage? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.backButtonImage) as? UIImage
         }
@@ -34,7 +34,7 @@ extension UIViewController {
         }
     }
 
-    @objc public var s_fullScreenPopGestureEnabled: Bool {
+    @objc public var fullScreenPopGestureEnabled: Bool {
         get {
             return (objc_getAssociatedObject(self, &AssociatedKeys.popGesture) != nil)
         }
@@ -52,7 +52,7 @@ extension UIViewController {
         }
     }
 
-    var s_wrapViewController: WrapViewController? {
+    var wrapViewController: WrapViewController? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.wrapViewController) as? WrapViewController
         }

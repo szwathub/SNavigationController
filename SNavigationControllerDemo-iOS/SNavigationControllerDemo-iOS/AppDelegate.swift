@@ -1,15 +1,15 @@
-///
-///  Copyright © 2019 ZhiweiSun. All rights reserved.
-///
-///  File name: AppDelegate.swift
-///  Author:    ZhiweiSun @szwathub
-///  E-mail:    szwathub@gmail.com
-///
-///  Description:
-///
-///  History:
-///      06/12/2019: Created by szwathub on 06/12/2019
-///
+//
+//  Copyright © 2019 ZhiweiSun. All rights reserved.
+//
+//  File name: AppDelegate.swift
+//  Author:    ZhiweiSun @szwathub
+//  E-mail:    szwathub@gmail.com
+//
+//  Description:
+//
+//  History:
+//      06/12/2019: Created by szwathub on 06/12/2019
+//
 
 import UIKit
 import SNavigationController
@@ -19,14 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        /// Override point for customization after application launch.
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        
+
         let viewController = ViewController()
         let navController = SNavigationController.init(rootViewController: viewController)
-        
+
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
 

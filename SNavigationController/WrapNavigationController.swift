@@ -14,6 +14,7 @@
 import UIKit
 
 final class WrapNavigationController: UINavigationController {
+
     override func popViewController(animated: Bool) -> UIViewController? {
         return navigationController?.popViewController(animated: animated)
     }
@@ -37,13 +38,13 @@ final class WrapNavigationController: UINavigationController {
         var result: [WrapViewController] = [WrapViewController]()
 
         for viewController in viewControllers {
-            if let wrapController = viewController.s_wrapViewController {
+            if let wrapController = viewController.wrapViewController {
                 result.append(wrapController)
             } else {
                 viewController.s_navigationController = navigationController as? SNavigationController
 
                 let otherItems: [UIBarButtonItem] = viewController.configLeftBarButtonItems()
-                let backButtonItem: UIBarButtonItem = UIBarButtonItem(image: viewController.s_backButtonImage,
+                let backButtonItem: UIBarButtonItem = UIBarButtonItem(image: viewController.backButtonImage,
                                                                       style: .plain,
                                                                      target: self,
                                                                      action: .backButtonTap)
@@ -67,7 +68,7 @@ final class WrapNavigationController: UINavigationController {
 
         let otherItems: [UIBarButtonItem] = viewController.configLeftBarButtonItems()
 
-        let backButtonItem = UIBarButtonItem(image: viewController.s_backButtonImage,
+        let backButtonItem = UIBarButtonItem(image: viewController.backButtonImage,
                                              style: .plain,
                                             target: self,
                                             action: .backButtonTap)

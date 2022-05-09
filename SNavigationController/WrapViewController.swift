@@ -15,7 +15,8 @@ import UIKit
 
 var s_tabBarRectValue: NSValue?
 
-public class WrapViewController: UIViewController {
+class WrapViewController: UIViewController {
+
     public var rootViewController: UIViewController? {
         if let wrapNavController = children.first as? WrapNavigationController {
             return wrapNavController.topViewController
@@ -24,16 +25,16 @@ public class WrapViewController: UIViewController {
         return nil
     }
 
-    public override var s_fullScreenPopGestureEnabled: Bool {
+    public override var fullScreenPopGestureEnabled: Bool {
         get {
-            if let fullScreenPopGestureEnabled = rootViewController?.s_fullScreenPopGestureEnabled {
+            if let fullScreenPopGestureEnabled = rootViewController?.fullScreenPopGestureEnabled {
                 return fullScreenPopGestureEnabled
             }
 
             return false
         }
         set {
-            super.s_fullScreenPopGestureEnabled = newValue
+            super.fullScreenPopGestureEnabled = newValue
         }
     }
 
@@ -81,14 +82,14 @@ public class WrapViewController: UIViewController {
     }
 
     class func wrapViewController(_ viewController: UIViewController) -> WrapViewController {
-        let wrapNavController: WrapNavigationController = WrapNavigationController()
+        let wrapNavController = WrapNavigationController()
         wrapNavController.viewControllers = [viewController]
 
-        let wrapViewController: WrapViewController = WrapViewController()
+        let wrapViewController = WrapViewController()
         wrapViewController.view.addSubview(wrapNavController.view)
         wrapViewController.addChild(wrapNavController)
 
-        viewController.s_wrapViewController = wrapViewController
+        viewController.wrapViewController = wrapViewController
 
         return wrapViewController
     }

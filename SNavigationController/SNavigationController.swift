@@ -14,7 +14,9 @@
 import UIKit
 
 open class SNavigationController: UINavigationController {
+
     var popPanGesture: UIScreenEdgePanGestureRecognizer?
+
     var s_viewControllers: [UIViewController] {
         var controllers: [UIViewController] = [UIViewController]()
         for viewController in viewControllers {
@@ -33,7 +35,7 @@ open class SNavigationController: UINavigationController {
         super.init(rootViewController: rootViewController)
 
         rootViewController.s_navigationController = self
-        rootViewController.s_backButtonImage      = nil
+        rootViewController.backButtonImage      = nil
         viewControllers = [WrapViewController.wrapViewController(rootViewController)]
     }
 
@@ -70,7 +72,7 @@ extension SNavigationController: UINavigationControllerDelegate {
 
         let isRootVC: Bool = (viewController == navigationController.viewControllers.first)
 
-        if viewController.s_fullScreenPopGestureEnabled {
+        if viewController.fullScreenPopGestureEnabled {
             if isRootVC {
                 if let gesture = popPanGesture {
                     view.removeGestureRecognizer(gesture)

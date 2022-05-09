@@ -1,8 +1,8 @@
 <h1 align="center">SNavigationController</h1>
 
 <p align="center">
-    <a href="https://travis-ci.com/szwathub/SNavigationController">
-        <img src="https://travis-ci.com/szwathub/SNavigationController.svg?branch=master" alt="Travis Build Status">
+    <a href="https://github.com/szwathub/SNavigationController/actions">
+            <img src="https://img.shields.io/github/workflow/status/szwathub/SNavigationController/Xcode%20-%20Build%20and%20Analyze" alt="GitHub Workflow Status">
     </a>
     <a href="https://codecov.io/github/szwathub/SNavigationController">
         <img src="https://codecov.io/gh/szwathub/SNavigationController/branch/master/graph/badge.svg" alt="Codecov">
@@ -30,7 +30,6 @@
         <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome">
     </a>
 </p>
-
 
 ## Requirements
 
