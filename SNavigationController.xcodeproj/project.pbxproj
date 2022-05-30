@@ -6,20 +6,6 @@
 	objectVersion = 51;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		6A4C4FED6E4C792F8C426530 /* Cleanup Whitespace */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = F486763FB6EED6ACBADEBA88 /* Build configuration list for PBXAggregateTarget "Cleanup Whitespace" */;
-			buildPhases = (
-				CC0256104920A7B2CCD40CD6 /* Cleanup Whitespace */,
-			);
-			dependencies = (
-			);
-			name = "Cleanup Whitespace";
-			productName = "Cleanup Whitespace";
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		3647414720DCD1B4007C975D /* SNavigationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36307BE6200CD79200D53049 /* SNavigationController.framework */; };
 		3647415020DCD1F3007C975D /* SNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3647414E20DCD1F3007C975D /* SNavigationControllerTests.swift */; };
@@ -31,8 +17,8 @@
 		36CBCAB622B0DAFD006CF8A1 /* SNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBCAB522B0DAFD006CF8A1 /* SNavigationController.swift */; };
 		36CBCAB722B0DBB6006CF8A1 /* SNavigationController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 36CBCAB522B0DAFD006CF8A1 /* SNavigationController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		36CBCABE22B0E968006CF8A1 /* WrapNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBCABD22B0E968006CF8A1 /* WrapNavigationController.swift */; };
-		41CAA5E58840720A16C588CD /* Pods_SNavigationController_SNavigationControllerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17ACECD427312ED21A6DAAE /* Pods_SNavigationController_SNavigationControllerTests.framework */; };
-		91FE28CE4B568BC9A793C9DE /* Pods_SNavigationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42F1DFCD9D5B682311CE3C5 /* Pods_SNavigationController.framework */; };
+		560FF951748B6B56A4ED1D71 /* Pods_SNavigationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E49DBB51F8AC14741B41C0 /* Pods_SNavigationController.framework */; };
+		C6E51506DD24F6B4564A20A0 /* Pods_SNavigationController_SNavigationControllerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F333ACC1513BB71DECAD4F37 /* Pods_SNavigationController_SNavigationControllerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,14 +43,14 @@
 		36CBCAB522B0DAFD006CF8A1 /* SNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNavigationController.swift; sourceTree = "<group>"; };
 		36CBCABD22B0E968006CF8A1 /* WrapNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapNavigationController.swift; sourceTree = "<group>"; };
 		4032D2DFB826FAFB59038ABB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5A474765D1FC273485A51B94 /* Pods-SNavigationController-SNavigationControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationController-SNavigationControllerTests.release.xcconfig"; path = "Target Support Files/Pods-SNavigationController-SNavigationControllerTests/Pods-SNavigationController-SNavigationControllerTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BAA973B25FA3430000A49D5 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		69A61FB91EA1BB0DCD7E5F02 /* SNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = SNavigationController.podspec; sourceTree = "<group>"; };
-		8F73E160AFE7EC39DEE8837D /* Pods-SNavigationController-SNavigationControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationController-SNavigationControllerTests.debug.xcconfig"; path = "Target Support Files/Pods-SNavigationController-SNavigationControllerTests/Pods-SNavigationController-SNavigationControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A324D1E483BD102B15C65055 /* Pods-SNavigationController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationController.debug.xcconfig"; path = "Target Support Files/Pods-SNavigationController/Pods-SNavigationController.debug.xcconfig"; sourceTree = "<group>"; };
-		B17ACECD427312ED21A6DAAE /* Pods_SNavigationController_SNavigationControllerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNavigationController_SNavigationControllerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B42F1DFCD9D5B682311CE3C5 /* Pods_SNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C23635450211269FF7AB6A27 /* Pods-SNavigationController-SNavigationControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationController-SNavigationControllerTests.release.xcconfig"; path = "Target Support Files/Pods-SNavigationController-SNavigationControllerTests/Pods-SNavigationController-SNavigationControllerTests.release.xcconfig"; sourceTree = "<group>"; };
-		DE8BA00263EBB2A5886CC744 /* Pods-SNavigationController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationController.release.xcconfig"; path = "Target Support Files/Pods-SNavigationController/Pods-SNavigationController.release.xcconfig"; sourceTree = "<group>"; };
+		70BB859CC4D77BE570E54295 /* Pods-SNavigationController-SNavigationControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationController-SNavigationControllerTests.debug.xcconfig"; path = "Target Support Files/Pods-SNavigationController-SNavigationControllerTests/Pods-SNavigationController-SNavigationControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		85251DE118D6C1EA4C5AE867 /* Pods-SNavigationController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationController.release.xcconfig"; path = "Target Support Files/Pods-SNavigationController/Pods-SNavigationController.release.xcconfig"; sourceTree = "<group>"; };
+		A764C5177989BB7519411051 /* Pods-SNavigationController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNavigationController.debug.xcconfig"; path = "Target Support Files/Pods-SNavigationController/Pods-SNavigationController.debug.xcconfig"; sourceTree = "<group>"; };
+		C8E49DBB51F8AC14741B41C0 /* Pods_SNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F333ACC1513BB71DECAD4F37 /* Pods_SNavigationController_SNavigationControllerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNavigationController_SNavigationControllerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91FE28CE4B568BC9A793C9DE /* Pods_SNavigationController.framework in Frameworks */,
+				560FF951748B6B56A4ED1D71 /* Pods_SNavigationController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3647414720DCD1B4007C975D /* SNavigationController.framework in Frameworks */,
-				41CAA5E58840720A16C588CD /* Pods_SNavigationController_SNavigationControllerTests.framework in Frameworks */,
+				C6E51506DD24F6B4564A20A0 /* Pods_SNavigationController_SNavigationControllerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,12 +77,21 @@
 		04DAB4763D77EFEA9C0D0F25 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A324D1E483BD102B15C65055 /* Pods-SNavigationController.debug.xcconfig */,
-				DE8BA00263EBB2A5886CC744 /* Pods-SNavigationController.release.xcconfig */,
-				8F73E160AFE7EC39DEE8837D /* Pods-SNavigationController-SNavigationControllerTests.debug.xcconfig */,
-				C23635450211269FF7AB6A27 /* Pods-SNavigationController-SNavigationControllerTests.release.xcconfig */,
+				A764C5177989BB7519411051 /* Pods-SNavigationController.debug.xcconfig */,
+				85251DE118D6C1EA4C5AE867 /* Pods-SNavigationController.release.xcconfig */,
+				70BB859CC4D77BE570E54295 /* Pods-SNavigationController-SNavigationControllerTests.debug.xcconfig */,
+				5A474765D1FC273485A51B94 /* Pods-SNavigationController-SNavigationControllerTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		279C65C07C2AF91911281B34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8E49DBB51F8AC14741B41C0 /* Pods_SNavigationController.framework */,
+				F333ACC1513BB71DECAD4F37 /* Pods_SNavigationController_SNavigationControllerTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		36307BDC200CD79200D53049 = {
@@ -107,7 +102,7 @@
 				3647414D20DCD1F3007C975D /* Tests */,
 				36307BE7200CD79200D53049 /* Products */,
 				04DAB4763D77EFEA9C0D0F25 /* Pods */,
-				924157C91BC462485B3E5EE2 /* Frameworks */,
+				279C65C07C2AF91911281B34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,15 +147,6 @@
 			name = SNavigationControllerMetadata;
 			sourceTree = "<group>";
 		};
-		924157C91BC462485B3E5EE2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B42F1DFCD9D5B682311CE3C5 /* Pods_SNavigationController.framework */,
-				B17ACECD427312ED21A6DAAE /* Pods_SNavigationController_SNavigationControllerTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -182,7 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36307BFA200CD79200D53049 /* Build configuration list for PBXNativeTarget "SNavigationController" */;
 			buildPhases = (
-				765CDE4AAB20D84A45D860B9 /* [CP] Check Pods Manifest.lock */,
+				265B83B1898A14784CE61E40 /* [CP] Check Pods Manifest.lock */,
 				36307BE1200CD79200D53049 /* Sources */,
 				36307BE2200CD79200D53049 /* Frameworks */,
 				36307BE3200CD79200D53049 /* Headers */,
@@ -201,7 +187,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3647414A20DCD1B4007C975D /* Build configuration list for PBXNativeTarget "SNavigationControllerTests" */;
 			buildPhases = (
-				2E7B01A859822FB6917A6D21 /* [CP] Check Pods Manifest.lock */,
+				536AFECC612FA8D8FAC0BA89 /* [CP] Check Pods Manifest.lock */,
 				3647413E20DCD1B4007C975D /* Sources */,
 				3647413F20DCD1B4007C975D /* Frameworks */,
 				3647414020DCD1B4007C975D /* Resources */,
@@ -253,7 +239,6 @@
 			targets = (
 				36307BE5200CD79200D53049 /* SNavigationController */,
 				3647414120DCD1B4007C975D /* SNavigationControllerTests */,
-				6A4C4FED6E4C792F8C426530 /* Cleanup Whitespace */,
 			);
 		};
 /* End PBXProject section */
@@ -276,29 +261,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2E7B01A859822FB6917A6D21 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SNavigationController-SNavigationControllerTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		765CDE4AAB20D84A45D860B9 /* [CP] Check Pods Manifest.lock */ = {
+		265B83B1898A14784CE61E40 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,7 +283,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC0256104920A7B2CCD40CD6 /* Cleanup Whitespace */ = {
+		536AFECC612FA8D8FAC0BA89 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,15 +291,19 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Cleanup Whitespace";
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNavigationController-SNavigationControllerTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\ndirectories=(Examples SNavigationController Tests)\n\nfor directory in \"${directories[@]}\"\ndo\n    echo \"Cleaning whitespace in directory: $directory\"\n    find $directory -iregex '.*\\.swift' -exec sed -E -i '' -e 's/[[:blank:]]*$//' {} \\;\n    find $directory -iregex '.*\\.[hm]' -exec sed -E -i '' -e 's/[[:blank:]]*$//' {} \\;\ndone\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -371,14 +338,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		12C239C417C1469616F63840 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				PRODUCT_NAME = "Cleanup Whitespace";
-			};
-			name = Release;
-		};
 		36307BF8200CD79200D53049 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -501,7 +460,7 @@
 		};
 		36307BFB200CD79200D53049 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A324D1E483BD102B15C65055 /* Pods-SNavigationController.debug.xcconfig */;
+			baseConfigurationReference = A764C5177989BB7519411051 /* Pods-SNavigationController.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -535,7 +494,7 @@
 		};
 		36307BFC200CD79200D53049 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE8BA00263EBB2A5886CC744 /* Pods-SNavigationController.release.xcconfig */;
+			baseConfigurationReference = 85251DE118D6C1EA4C5AE867 /* Pods-SNavigationController.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -568,7 +527,7 @@
 		};
 		3647414B20DCD1B4007C975D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F73E160AFE7EC39DEE8837D /* Pods-SNavigationController-SNavigationControllerTests.debug.xcconfig */;
+			baseConfigurationReference = 70BB859CC4D77BE570E54295 /* Pods-SNavigationController-SNavigationControllerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -592,7 +551,7 @@
 		};
 		3647414C20DCD1B4007C975D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C23635450211269FF7AB6A27 /* Pods-SNavigationController-SNavigationControllerTests.release.xcconfig */;
+			baseConfigurationReference = 5A474765D1FC273485A51B94 /* Pods-SNavigationController-SNavigationControllerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -613,14 +572,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
-		};
-		FBDB22B8ABA516619620DBA8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				PRODUCT_NAME = "Cleanup Whitespace";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -648,15 +599,6 @@
 			buildConfigurations = (
 				3647414B20DCD1B4007C975D /* Debug */,
 				3647414C20DCD1B4007C975D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F486763FB6EED6ACBADEBA88 /* Build configuration list for PBXAggregateTarget "Cleanup Whitespace" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				12C239C417C1469616F63840 /* Release */,
-				FBDB22B8ABA516619620DBA8 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
